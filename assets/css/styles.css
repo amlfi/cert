@@ -90,6 +90,10 @@ h5 {
   }
 }
 
+.description {
+  display: none;
+}
+
 /* Categories */
 .catImg {
   border-radius: 5px;
@@ -199,11 +203,32 @@ tr {
   transform: scale(1.15);
 }
 
-/* Footer-Dark */
-
-footer {
+/* Sections */
+#design {
+  visibility: visible;
 }
 
+#webDev {
+  visibility: visible;
+}
+
+#networking {
+  display: none;
+}
+
+#safety {
+  display: none;
+}
+
+#business {
+  display: none;
+}
+
+#engineering {
+  display: none;
+}
+
+/* Footer-Dark */
 #footer {
   margin: 2rem 0;
   padding: 0;
