@@ -1,0 +1,273 @@
+/* Base Styles */
+html {
+  width: 100%;
+}
+
+body {
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #c1c4cc;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #1c2c59;
+  vertical-align: middle;
+}
+
+@media (max-width: 576px) {
+  body {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+p {
+  color: #c1c4cc;
+}
+
+h5 {
+  color: #c1c4cc;
+  font-size: 1.15rem;
+}
+
+/* Header Section */
+#header {
+  margin-top: 30px;
+}
+
+#header img {
+  width: 150px;
+  float: right;
+}
+
+@media (max-width: 576px) {
+  #header img {
+    float: none;
+  }
+}
+
+.headerCol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Bio Section */
+#bioCtn {
+  margin-top: 50px;
+}
+
+#bio {
+  background-color: rgba(27, 26, 26, 0.3);
+  padding: 2rem 1rem 1.5rem 1rem;
+  margin-bottom: 1rem;
+  border-color: rgba(27, 26, 26, 0.3);
+  border-radius: 5px;
+}
+
+.bioImg {
+  width: 11rem;
+}
+
+.name {
+  padding-top: 1rem;
+}
+
+@media (max-width: 576px) {
+  .name {
+    padding-top: 2rem;
+  }
+  #bio {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .rightBio {
+    padding-left: 2rem;
+  }
+}
+
+/* Categories */
+.catImg {
+  border-radius: 5px;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .catImg {
+    border-radius: 0px;
+  }
+}
+
+.table td {
+  text-align: left;
+}
+
+.table th {
+  padding: 0.75rem;
+}
+
+tbody {
+  color: #c1c4cc;
+}
+
+tr {
+  border-bottom: 0.5px solid #c6cbcf71;
+  align-items: center;
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+.awardCat {
+  padding: 30px 0 20px 0;
+}
+
+.table td,
+.table th {
+  padding: 0.75rem;
+  border-top: 0px solid #dee2e6;
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  color: #fff;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.logo {
+  width: 25px;
+}
+
+.logoCell {
+  width: 5%;
+}
+
+.logoImg {
+  height: 25px;
+}
+
+.providerImg {
+  height: 25px;
+}
+
+@media (min-width: 300px) {
+  .dblSlash {
+    color: #fac76b;
+    font-weight: 300;
+    padding: 0 6px;
+  }
+}
+
+.date {
+  font-style: italic;
+}
+
+@media (min-width: 300px) {
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 300px) {
+  bioImg {
+    padding-bottom: 1rem;
+  }
+}
+
+.zoomIn {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.zoomIn:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+/* Footer-Dark */
+.footer-dark {
+  padding: 50px 5px 20px 5px;
+  color: #f0f9ff;
+}
+
+@media (min-width: 300px) {
+  .footer-dark {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 300px) {
+  .footer-dark .item.social > a {
+    font-size: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 26px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 4px;
+    color: #fff;
+    opacity: 0.75;
+  }
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
