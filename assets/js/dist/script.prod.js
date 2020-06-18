@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(c){c(".clickable-row").click(function(){window.location=c(this).data("href")})});
+"use strict";$(document).ready(function(o){o(".clickable-row").click(function(){window.location=o(this).data("href")})}),$(window).scroll(function(){$(".arrow").css("opacity",1-$(window).scrollTop()/250)});
