@@ -57,7 +57,7 @@ h5 {
 }
 
 #engineering {
-  display: none;
+  visibility: visible;
 }
 
 /* Header Section */
@@ -178,9 +178,6 @@ tr {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
 }
 
-.logo {
-  width: 25px;
-}
 
 .logoCell {
   width: 5%;
@@ -288,10 +285,8 @@ tr {
 .containerScroll {
   height: 1vh;
 }
-.below {
-  height: 100vh;
-}
-i {
+
+#arrowI {
   display: block;
   color: rgba(255, 255, 255, 0.2);
 }
@@ -301,7 +296,6 @@ i {
   left: 50%;
   margin-left: -20px;
   height: 30px; 
-  /*   change with size of arrow to make sit on bottom */ 
 }
 
 .bounce {
@@ -319,6 +313,10 @@ i {
 
 .icon-social {
   padding: 0;
+}
+
+.icon {
+  font-size: 1rem;
 }
 
 @media (max-width: 575px) {
@@ -345,19 +343,10 @@ i {
   }
 }
 
-.footer-dark .item.text {
-  margin-bottom: 36px;
-}
-
 @media (max-width: 767px) {
   .footer-dark .item.text {
     margin-bottom: 0;
   }
-}
-
-.footer-dark .item.text p {
-  opacity: 0.6;
-  margin-bottom: 0;
 }
 
 .footer-dark .item.social {
@@ -389,6 +378,7 @@ i {
 
 .footer-dark .item.social > a:hover {
   opacity: 0.9;
+  color: white;
 }
 
 .footer-dark .copyright {
