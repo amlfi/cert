@@ -34,6 +34,13 @@ h5 {
   padding-bottom: 0.5rem;
 }
 
+ tr td.left {
+  text-align: left;
+}
+
+tr td.right {
+  text-align: right;
+}
 
 /* Sections */
 #design {
@@ -107,7 +114,7 @@ h5 {
 }
 
 .title {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -138,10 +145,6 @@ h5 {
   }
 }
 
-.table td {
-  text-align: left;
-}
-
 .table th {
   padding: 0.75rem;
 }
@@ -165,7 +168,8 @@ tr {
 
 .table td,
 .table th {
-  padding: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-top: 0px solid #dee2e6;
   vertical-align: middle;
 }
@@ -177,7 +181,6 @@ tr {
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
 }
-
 
 .logoCell {
   width: 5%;
@@ -230,6 +233,11 @@ tr {
 .zoomIn:hover {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
+}
+
+tr td.certCell {
+  text-align: left;
+  padding-left: 1rem;
 }
 
 /* Bouncing Arrow Fade on Scroll */
