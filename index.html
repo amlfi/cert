@@ -54,6 +54,54 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Handlebars -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script id="templateDesign" type="text/x-handlebars-template">
+      {{#each course}}
+        <!-- {{this.courseID}} -->
+        <tr>
+          <td class="logoCell left">
+            <a href={{this.courseLink}} target="_blank">
+              <img
+                class="logoImg zoomIn"
+                src={{this.courseLogoSrc}}
+                alt={{this.courseLogoAlt}}
+              />
+            </a>
+          </td>
+          <td class="clickable-row certCell" data-href={{this.certLink}}>
+            {{this.programText}}
+            <span class="dblSlash">
+              /
+            </span>
+            {{this.specificText}}
+            <span class="dblSlash">
+              /
+            </span>
+            {{this.hrs}}
+            <span class="dblSlash">
+              /
+            </span>
+            <span class="date">
+              <em>
+                {{this.date}}
+              </em>
+            </span>
+          </td>
+          <td class="logoCell right">
+            <a href={{this.certLink}} target="_blank">
+              <img
+                class="logoImg zoomIn"
+                src={{this.providerLogoSrc}}
+                alt={{this.providerLogoAlt}}
+              />
+            </a>
+          </td>
+        </tr>
+      {{/each}}
+      console.log({{courseID}});
+    </script>
   </head>
 
   <body>
@@ -133,7 +181,7 @@
           </div>
           <div class="table-responsive table-hover">
             <table class="table">
-              <tbody>
+              <tbody id="information">
                 <!-- Adobe InDesign - Essentials Course -->
                 <tr>
                   <td class="logoCell left">
@@ -1129,11 +1177,12 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"
       async
     ></script>
-    <script src="assets/js/bs-init.js" async></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"
       async
     ></script>
     <script src="assets/js/script.js" async></script>
+    <script src="assets/js/handlebars.js" async></script>
   </body>
 </html>
