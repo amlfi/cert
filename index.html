@@ -2,6 +2,7 @@
 <html lang="en-GB">
   <head>
     <!-- Metadata -->
+    <title>AF CERTS</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -25,8 +26,6 @@
       content="A collection of Anthony Fitzgerald's most recent professional certifications. Including such areas, as: Deisgn, Web Development, Technology, Business, Safety and Engineering."
     />
     <meta property="og:url" content="https://amlfi.github.io/certs/" />
-
-    <title>AF CERTS</title>
 
     <!-- Linked Sheets -->
     <link
@@ -54,54 +53,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- Handlebars -->
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script id="templateDesign" type="text/x-handlebars-template">
-      {{#each course}}
-        <!-- {{this.courseID}} -->
-        <tr>
-          <td class="logoCell left">
-            <a href={{this.courseLink}} target="_blank">
-              <img
-                class="logoImg zoomIn"
-                src={{this.courseLogoSrc}}
-                alt={{this.courseLogoAlt}}
-              />
-            </a>
-          </td>
-          <td class="clickable-row certCell" data-href={{this.certLink}}>
-            {{this.programText}}
-            <span class="dblSlash">
-              /
-            </span>
-            {{this.specificText}}
-            <span class="dblSlash">
-              /
-            </span>
-            {{this.hrs}}
-            <span class="dblSlash">
-              /
-            </span>
-            <span class="date">
-              <em>
-                {{this.date}}
-              </em>
-            </span>
-          </td>
-          <td class="logoCell right">
-            <a href={{this.certLink}} target="_blank">
-              <img
-                class="logoImg zoomIn"
-                src={{this.providerLogoSrc}}
-                alt={{this.providerLogoAlt}}
-              />
-            </a>
-          </td>
-        </tr>
-      {{/each}}
-      console.log({{courseID}});
-    </script>
   </head>
 
   <body>
@@ -161,13 +112,7 @@
     </div>
 
     <!-- Design Section -->
-    <div
-      class="container"
-      data-aos="fade"
-      data-aos-duration="1350"
-      data-aos-delay="250"
-      id="design"
-    >
+    <div class="container" data-aos="fade" id="design">
       <div class="row">
         <div class="col" style="padding: 0 0;">
           <div class="row" style="margin: 0;">
@@ -181,187 +126,8 @@
           </div>
           <div class="table-responsive table-hover">
             <table class="table">
-              <tbody id="information">
-                <!-- Adobe InDesign - Essentials Course -->
-                <tr>
-                  <td class="logoCell left">
-                    <a href="https://skl.sh/2UNR2ZZ" target="_blank">
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/Adobe-InDesign-CC-01.svg"
-                        alt="Adobe Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.skillshare.com/user/amlfitzgerald"
-                  >
-                    Adobe InDesign
-                    <span class="dblSlash">/</span>
-                    Essentials Course
-                    <span class="dblSlash">/</span>
-                    6.5hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>June, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                        alt="SkillShare Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Adobe Photoshop - Essentials Course -->
-                <tr>
-                  <td class="logoCell left">
-                    <a href="https://skl.sh/2B95NQ3" target="_blank">
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/Adobe-Photoshop-CC-01.svg"
-                        alt="SkillShare Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.skillshare.com/user/amlfitzgerald"
-                  >
-                    Adobe Photoshop
-                    <span class="dblSlash">/</span>
-                    Essentials Course
-                    <span class="dblSlash">/</span>
-                    8.5hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>June, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                        alt="SkillShare Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Adobe Animate - HTML5 Banners -->
-                <tr>
-                  <td class="logoCell left">
-                    <a href="https://skl.sh/30GpKbT" target="_blank">
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/Adobe-Animate-CC-01.svg"
-                        alt="Adobe Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.skillshare.com/user/amlfitzgerald"
-                  >
-                    Adobe Animate
-                    <span class="dblSlash">/</span>
-                    HTML5 Animation
-                    <span class="dblSlash">/</span>
-                    5hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>June, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                        alt="SkillShare Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Adobe Illustrator - Essentials -->
-                <tr>
-                  <td class="logoCell left zoomIn">
-                    <a href="https://skl.sh/2TBbaxQ" target="_blank">
-                      <img
-                        class="logoImg"
-                        src="assets/img/Adobe-Illustrator-CC-01.svg"
-                        alt="Adobe Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.skillshare.com/user/amlfitzgerald"
-                  >
-                    Adobe Illustrator
-                    <span class="dblSlash">/</span>
-                    Essentials Course
-                    <span class="dblSlash">/</span>
-                    6hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                        alt="SkillShare Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Adobe XD - UI/UX -->
-                <tr>
-                  <td class="logoCell left">
-                    <a href="https://skl.sh/2Yjz821" target="_blank">
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/adobe-experience-design-1.svg"
-                        alt="Adobe Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.skillshare.com/user/amlfitzgerald"
-                  >
-                    Adobe XD
-                    <span class="dblSlash">/</span>
-                    UI/UX Design
-                    <span class="dblSlash">/</span>
-                    11 hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                        alt="SkillShare Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
+              <tbody id="designHB">
+                <!-- Templates inserted via handlebars.js -->
               </tbody>
             </table>
           </div>
@@ -370,13 +136,7 @@
     </div>
 
     <!-- Web Dev Section -->
-    <div
-      class="container"
-      data-aos="fade"
-      data-aos-duration="1350"
-      data-aos-delay="250"
-      id="webDev"
-    >
+    <div class="container" data-aos="fade-up" id="webDev">
       <div class="row">
         <div class="col" style="padding: 0;">
           <div class="row" style="margin: 0;">
@@ -390,237 +150,8 @@
           </div>
           <div class="table-responsive table-hover">
             <table class="table">
-              <tbody>
-                <!-- Code Foundations -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://www.codecademy.com/learn/paths/code-foundations"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/codeFoundations_onWhite.svg"
-                        alt="Codecademy Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.codecademy.com/profiles/AMLFI"
-                  >
-                    Codecademy
-                    <span class="dblSlash">/</span>
-                    Career Path - Code Foundations
-                    <span class="dblSlash">/</span>
-                    2 Weeks<span class="dblSlash">/</span>
-                    <span class="date"><em>June, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.codecademy.com/profiles/AMLFI"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/codecademy_onBlack.svg"
-                        alt="Codecademy Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Build a Website -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://www.codecademy.com/learn/paths/learn-how-to-build-websites"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/buildWebsite.svg"
-                        alt="Codecademy Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.codecademy.com/profiles/AMLFI"
-                  >
-                    Codecademy
-                    <span class="dblSlash">/</span>
-                    Skill Path - HTML5 Websites with Github
-                    <span class="dblSlash">/</span>
-                    10 weeks
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>June, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.codecademy.com/profiles/AMLFI"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/codecademy_onBlack.svg"
-                        alt="Codecademy Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Responsive Web Design -->
-                <tr>
-                  <td class="logoCell left">
-                    <a href="https://skl.sh/2Y8ianr" target="_blank">
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/visual-studio-code-1.svg"
-                        alt="VS Code Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.skillshare.com/user/amlfitzgerald"
-                  >
-                    VS Code
-                    <span class="dblSlash">/</span>
-                    Responsive Web Design with Bootstrap
-                    <span class="dblSlash">/</span>
-                    17 hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>June, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                        alt="SkillShare Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Learn to Code -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://www.codecademy.com/learn/learn-how-to-code"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/code_onWhite.svg"
-                        alt="Codecademy Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.codecademy.com/profiles/AMLFI"
-                  >
-                    Codecademy
-                    <span class="dblSlash">/</span>
-                    Course - Learn How To Code
-                    <span class="dblSlash">/</span>
-                    6hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>June, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.codecademy.com/profiles/AMLFI"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/codecademy_onBlack.svg"
-                        alt="Codecademy Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Learn Bootstrap -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://www.codecademy.com/learn/learn-bootstrap"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/bootstrap_icon.svg"
-                        alt="Bootstrap Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.codecademy.com/profiles/AMLFI"
-                  >
-                    Codecademy
-                    <span class="dblSlash">/</span>
-                    Course - Learn Bootstrap
-                    <span class="dblSlash">/</span>
-                    3hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>June, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.codecademy.com/profiles/AMLFI"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/codecademy_onBlack.svg"
-                        alt="Codecademy Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Learn HTML -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://www.codecademy.com/learn/learn-html"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/html-5-notext.svg"
-                        alt="HTML Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://www.codecademy.com/profiles/AMLFI"
-                  >
-                    Codecademy
-                    <span class="dblSlash">/</span>
-                    Course - Learn HTML
-                    <span class="dblSlash">/</span>
-                    9hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://www.codecademy.com/profiles/AMLFI"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/codecademy_onBlack.svg"
-                        alt="Codecademy Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
+              <tbody id="webDevHB">
+                <!-- Templates inserted via handlebars.js -->
               </tbody>
             </table>
           </div>
@@ -629,13 +160,7 @@
     </div>
 
     <!-- Networking Section -->
-    <div
-      class="container"
-      data-aos="fade"
-      data-aos-duration="1350"
-      data-aos-delay="250"
-      id="networking"
-    >
+    <div class="container" data-aos="fade-up" id="networking">
       <div class="row">
         <div class="col" style="padding: 0 0;">
           <div class="row" style="margin: 0;">
@@ -648,53 +173,8 @@
           </div>
           <div class="table-responsive">
             <table class="table">
-              <tbody>
-                <tr>
-                  <td>
-                    <img
-                      class="logoImg"
-                      src="assets/img/Adobe-Illustrator-CC-01.svg"
-                    />
-                  </td>
-                  <td>
-                    Adobe Illustrator - Essentials Course<span class="dblSlash"
-                      >//</span
-                    >6hrs<span class="dblSlash">//</span
-                    ><span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td>
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                      ><img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                    /></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="logo">
-                    <img
-                      class="logoImg"
-                      src="assets/img/adobe-experience-design-1.svg"
-                    />
-                  </td>
-                  <td>
-                    Adobe XD - UI/UX Design&nbsp;<span class="dblSlash">//</span
-                    >11&nbsp;hrs<span class="dblSlash">//</span
-                    ><span class="date"><em>May, 2020</em></span
-                    ><br />
-                  </td>
-                  <td style="width: 20px;">
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                      ><img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                    /></a>
-                  </td>
-                </tr>
+              <tbody id="networkingHB">
+                 <!-- Templates inserted via handlebars.js -->
               </tbody>
             </table>
           </div>
@@ -703,13 +183,7 @@
     </div>
 
     <!-- Safety Section -->
-    <div
-      class="container"
-      data-aos="fade"
-      data-aos-duration="1350"
-      data-aos-delay="250"
-      id="safety"
-    >
+    <div class="container" data-aos="fade-up" id="safety">
       <div class="row">
         <div class="col" style="padding: 0 0;">
           <div class="row" style="margin: 0;">
@@ -722,53 +196,8 @@
           </div>
           <div class="table-responsive">
             <table class="table">
-              <tbody>
-                <tr>
-                  <td>
-                    <img
-                      class="logoImg"
-                      src="assets/img/Adobe-Illustrator-CC-01.svg"
-                    />
-                  </td>
-                  <td>
-                    Adobe Illustrator - Essentials Course<span class="dblSlash"
-                      >//</span
-                    >6hrs<span class="dblSlash">//</span
-                    ><span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td>
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                      ><img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                    /></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="logo">
-                    <img
-                      class="logoImg"
-                      src="assets/img/adobe-experience-design-1.svg"
-                    />
-                  </td>
-                  <td>
-                    Adobe XD - UI/UX Design&nbsp;<span class="dblSlash">//</span
-                    >11&nbsp;hrs<span class="dblSlash">//</span
-                    ><span class="date"><em>May, 2020</em></span
-                    ><br />
-                  </td>
-                  <td style="width: 20px;">
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                      ><img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                    /></a>
-                  </td>
-                </tr>
+              <tbody id="safetyHB">
+                <!-- Templates inserted via handlebars.js -->
               </tbody>
             </table>
           </div>
@@ -777,13 +206,7 @@
     </div>
 
     <!-- Business Section  -->
-    <div
-      class="container"
-      data-aos="fade"
-      data-aos-duration="1350"
-      data-aos-delay="250"
-      id="business"
-    >
+    <div class="container" data-aos="fade-up" id="business">
       <div class="row">
         <div class="col" style="padding: 0 0;">
           <div class="row" style="margin: 0;">
@@ -796,53 +219,8 @@
           </div>
           <div class="table-responsive">
             <table class="table">
-              <tbody>
-                <tr>
-                  <td>
-                    <img
-                      class="logoImg"
-                      src="assets/img/Adobe-Illustrator-CC-01.svg"
-                    />
-                  </td>
-                  <td>
-                    Adobe Illustrator - Essentials Course<span class="dblSlash"
-                      >//</span
-                    >6hrs<span class="dblSlash">//</span
-                    ><span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td>
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                      ><img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                    /></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="logo">
-                    <img
-                      class="logoImg"
-                      src="assets/img/adobe-experience-design-1.svg"
-                    />
-                  </td>
-                  <td>
-                    Adobe XD - UI/UX Design&nbsp;<span class="dblSlash">//</span
-                    >11&nbsp;hrs<span class="dblSlash">//</span
-                    ><span class="date"><em>May, 2020</em></span
-                    ><br />
-                  </td>
-                  <td style="width: 20px;">
-                    <a
-                      href="https://www.skillshare.com/user/amlfitzgerald"
-                      target="_blank"
-                      ><img
-                        class="logoImg zoomIn"
-                        src="assets/img/Skillshare-logo-header-logged-in-2020.svg"
-                    /></a>
-                  </td>
-                </tr>
+              <tbody id="businessHB">
+                <!-- Templates inserted via handlebars.js -->
               </tbody>
             </table>
           </div>
@@ -851,13 +229,7 @@
     </div>
 
     <!-- Engineering Section -->
-    <div
-      class="container"
-      data-aos="fade"
-      data-aos-duration="1350"
-      data-aos-delay="250"
-      id="engineering"
-    >
+    <div class="container" data-aos="fade-up" id="engineering">
       <div class="row">
         <div class="col" style="padding: 0 0;">
           <div class="row" style="margin: 0;">
@@ -871,241 +243,8 @@
           </div>
           <div class="table-responsive table-hover">
             <table class="table">
-              <tbody>
-                <!-- Vectorworks - Core Concepts Classes -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://university.vectorworks.net/course/view.php?id=292"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-monogram_on_white.svg"
-                        alt="Vectorworks Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://university.vectorworks.net/local/vectscript/s.php/U4m9rA"
-                  >
-                    Vectorworks
-                    <span class="dblSlash">/</span>
-                    Core Concepts Classes
-                    <span class="dblSlash">/</span>
-                    16hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>June, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://university.vectorworks.net/local/vectscript/s.php/U4m9rA"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-long_on_black_long.svg"
-                        alt="Vectorworks Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Vectorworks Spotlight - Essentials Seminar -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://university.vectorworks.net/course/view.php?id=292"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-monogram_on_white.svg"
-                        alt="Vectorworks Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://university.vectorworks.net/local/vectscript/s.php/n7SoTN"
-                  >
-                    Vectorworks Spotlight
-                    <span class="dblSlash">/</span>
-                    Essentials Seminar
-                    <span class="dblSlash">/</span>
-                    4hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://university.vectorworks.net/local/vectscript/s.php/n7SoTN"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-long_on_black_long.svg"
-                        alt="Vectorworks Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Vectorworks Landmark - Essentials Seminar -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://university.vectorworks.net/course/view.php?id=217"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-monogram_on_white.svg"
-                        alt="Vectorworks Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://university.vectorworks.net/local/vectscript/s.php/n7SoTN"
-                  >
-                    Vectorworks Landmark
-                    <span class="dblSlash">/</span>
-                    Essentials Seminar
-                    <span class="dblSlash">/</span>
-                    4hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://university.vectorworks.net/local/vectscript/s.php/n7SoTN"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-long_on_black_long.svg"
-                        alt="Vectorworks Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Vectorworks Architect - Essentials Seminar -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://university.vectorworks.net/course/view.php?id=236"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-monogram_on_white.svg"
-                        alt="Vectorworks Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://university.vectorworks.net/local/vectscript/s.php/n7SoTN"
-                  >
-                    Vectorworks Architect
-                    <span class="dblSlash">/</span>
-                    Essentials Seminar
-                    <span class="dblSlash">/</span>
-                    2hrs
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://university.vectorworks.net/local/vectscript/s.php/n7SoTN"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-long_on_black_long.svg"
-                        alt="Vectorworks Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Vectorworks - BIM for Landscape -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://university.vectorworks.net/course/view.php?id=73"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/bsi.svg"
-                        alt="BSI Logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://university.vectorworks.net/local/vectscript/s.php/yRp1CQ"
-                  >
-                    Vectorworks
-                    <span class="dblSlash">/</span>
-                    BIM for Landscape
-                    <span class="dblSlash">/</span>
-                    1hr + Exam
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://university.vectorworks.net/local/vectscript/s.php/yRp1CQ"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-long_on_black_long.svg"
-                        alt="Vectorworks Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <!-- Vectorworks - DWG File Exchange -->
-                <tr>
-                  <td class="logoCell left">
-                    <a
-                      href="https://university.vectorworks.net/course/view.php?id=181"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/dwg.svg"
-                        alt="dwg logo"
-                      />
-                    </a>
-                  </td>
-                  <td
-                    class="clickable-row certCell"
-                    data-href="https://university.vectorworks.net/local/vectscript/s.php/yRp1CQ"
-                  >
-                    Vectorworks
-                    <span class="dblSlash">/</span>
-                    DWG File Exchange
-                    <span class="dblSlash">/</span>
-                    1hr + Exam
-                    <span class="dblSlash">/</span>
-                    <span class="date"><em>May, 2020</em></span>
-                  </td>
-                  <td class="logoCell right">
-                    <a
-                      href="https://university.vectorworks.net/local/vectscript/s.php/yRp1CQ"
-                      target="_blank"
-                    >
-                      <img
-                        class="logoImg zoomIn"
-                        src="assets/img/VW-logo-long_on_black_long.svg"
-                        alt="VW Logo"
-                      />
-                    </a>
-                  </td>
-                </tr>
+              <tbody id="engineeringHB">
+                <!-- Templates inserted via handlebars.js -->
               </tbody>
             </table>
           </div>
@@ -1171,18 +310,62 @@
     <!-- Scripts -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      async
     ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"
-      async
     ></script>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"
-      async
     ></script>
-    <script src="assets/js/script.js" async></script>
-    <script src="assets/js/handlebars.js" async></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/aos.js"></script>
+
+    <!-- Handlebars Template-->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template">
+      {{#each course}}
+        <tr>
+          <td class="logoCell left">
+            <a href={{this.courseLink}} target="_blank">
+              <img
+                class="logoImg zoomIn"
+                src={{this.courseLogoSrc}}
+                alt={{this.courseLogoAlt}}
+              />
+            </a>
+          </td>
+          <td class="clickable-row certCell" data-href={{this.certLink}}>
+            {{this.programText}}
+            <span class="dblSlash">
+              /
+            </span>
+            {{this.specificText}}
+            <span class="dblSlash">
+              /
+            </span>
+            {{this.hrs}}
+            <span class="dblSlash">
+              /
+            </span>
+            <span class="date">
+              <em>
+                {{this.date}}
+              </em>
+            </span>
+          </td>
+          <td class="logoCell right">
+            <a href={{this.certLink}} target="_blank">
+              <img
+                class="logoImg zoomIn"
+                src={{this.providerLogoSrc}}
+                alt={{this.providerLogoAlt}}
+              />
+            </a>
+          </td>
+        </tr>
+      {{/each}}
+    </script>
+    <script src="assets/js/handlebars.js"></script>
+
   </body>
 </html>
