@@ -13,6 +13,18 @@ $(window).scroll(function(){
 });
 
 // BS Init
-$(document).ready(function(){
-	AOS.init({ disable: 'mobile' });
+$(document).ready(
+  function(){
+    AOS.init({ 
+      disable: 'mobile' 
+    });
+});
+
+// Tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({
+    delay: {show: 500, hide: 100}, 
+    animation: true, 
+    placement: "top", 
+  });
 });

@@ -174,7 +174,7 @@
           <div class="table-responsive">
             <table class="table">
               <tbody id="networkingHB">
-                 <!-- Templates inserted via handlebars.js -->
+                <!-- Templates inserted via handlebars.js -->
               </tbody>
             </table>
           </div>
@@ -192,7 +192,7 @@
                 class="catImg shadow"
                 src="assets/img/Category_Headers_Safety.jpg"
               />
-            </div>
+          </div>
           </div>
           <div class="table-responsive">
             <table class="table">
@@ -307,16 +307,39 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="imagemodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-head">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span
+              ><span class="sr-only">Close</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="" class="imagepreview" style="width: 100%;" />
+          </div>
+          <div class="modal-foot">
+            <p id="modal-caption">
+              <!-- Caption inserted via handlebars.js function -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Scripts -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/aos.js"></script>
 
@@ -326,7 +349,13 @@
       {{#each course}}
         <tr>
           <td class="logoCell left">
-            <a href={{this.courseLink}} target="_blank">
+            <a 
+              class="tooltip-ctn"
+              href={{this.courseLink}} 
+              target="_blank"
+              data-toggle="tooltip" 
+              title="Click to view course details"
+              >
               <img
                 class="logoImg zoomIn"
                 src={{this.courseLogoSrc}}
@@ -354,7 +383,11 @@
             </span>
           </td>
           <td class="logoCell right">
-            <a href={{this.certLink}} target="_blank">
+            <a 
+              class="tooltip-ctn"
+              href={{this.certLink}}
+              data-toggle="tooltip" 
+              title="Click to view certificate">
               <img
                 class="logoImg zoomIn"
                 src={{this.providerLogoSrc}}
@@ -366,6 +399,5 @@
       {{/each}}
     </script>
     <script src="assets/js/handlebars.js"></script>
-
   </body>
 </html>

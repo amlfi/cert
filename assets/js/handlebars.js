@@ -1,4 +1,5 @@
-//* URL Links
+
+//! URL Links
 // Codecademy
 const certTranscriptCC = "https://www.codecademy.com/profiles/AMLFI";
 
@@ -6,11 +7,53 @@ const certTranscriptCC = "https://www.codecademy.com/profiles/AMLFI";
 const certTranscriptSS = "https://www.skillshare.com/user/amlfitzgerald";
 
 // Vectorworks
-const courseTranscriptVW = "https://university.vectorworks.net/local/vectscript/s.php/GMtBPU";
-const certTranscriptVW = "https://university.vectorworks.net/local/vectscript/s.php/4ZsDqc";
+const courseTranscriptVW =
+  "https://university.vectorworks.net/local/vectscript/s.php/GMtBPU";
+const certTranscriptVW =
+  "https://university.vectorworks.net/local/vectscript/s.php/4ZsDqc";
 
 
-//* Logos
+//! Modal Links
+//* NCASS
+// Food Hygeine Training Lv 1
+const certNCASS1 = "javascript:certModalNCASS1()";
+const certModalNCASS1 = () => {
+  $(".imagepreview").attr("src", "/assets/img/img_locked.svg"); // Certificate Image Src
+  $("#imagemodal").modal("show");
+  document.getElementById("modal-caption").innerHTML =
+    "NCASS &nbsp &mdash; &nbsp Food Hygiene Training Lvl 1"; // Caption Text
+};
+
+// Food Hygeine Training Lv 2
+const certNCASS2 = "javascript:certModalNCASS2()";
+const certModalNCASS2 = () => {
+  $(".imagepreview").attr("src", "/assets/img/img_locked.svg"); // Certificate Image Src
+  $("#imagemodal").modal("show");
+  document.getElementById("modal-caption").innerHTML =
+    "NCASS &nbsp &mdash; &nbsp Food Hygiene Training Lvl 2"; // Caption Text
+};
+
+// HACCP Certification Lv 1 & 2
+const certNCASS3 = "javascript:certModalNCASS3()";
+const certModalNCASS3 = () => {
+  $(".imagepreview").attr("src", "/assets/img/img_locked.svg"); // Certificate Image Src
+  $("#imagemodal").modal("show");
+  document.getElementById("modal-caption").innerHTML =
+    "NCASS &nbsp &mdash; &nbsp HACCP Certification Lv 1 & 2"; // Caption Text
+};
+
+//* NCRQ
+// Safety for Managers
+const certNCRQ = "javascript:certModalNCRQ()";
+const certModalNCRQ = () => {
+  $(".imagepreview").attr("src", "/assets/img/img_locked.svg"); // Certificate Image Src
+  $("#imagemodal").modal("show");
+  document.getElementById("modal-caption").innerHTML =
+    "NCRQ &nbsp &mdash; &nbsp Safety for Managers"; // Caption Text
+};
+
+
+//! Logos
 // Adobe
 const courseLogoAI = "assets/img/Adobe-Illustrator-CC-01.svg";
 const courseLogoAN = "assets/img/Adobe-Animate-CC-01.svg";
@@ -22,6 +65,18 @@ const courseAltAdobe = "Adobe Logo";
 // Codecademy
 const providerLogoCC = "assets/img/codecademy_onBlack.svg";
 const providerAltCC = "Codecademy Logo";
+
+// NCASS
+const courseLogoFSA = "assets/img/FoodStdsAgency_monogram.svg";
+const courseAltFSA = "Food Standards Authority Logo";
+const providerLogoNCASS = "assets/img/NCASS_Logo.svg";
+const providerAltNCASS = "NCASS Logo";
+
+// NCRQ
+const courseLogoSafety = "assets/img/generic_safety.svg";
+const courseAltSafety = "Generic Safety Logo";
+const providerLogoNCRQ = "assets/img/NCRQ.svg";
+const providerAltNCRQ = "NCRQ Logo";
 
 // SkillShare
 const providerLogoSS = "assets/img/Skillshare-logo-header-logged-in-2020.svg";
@@ -36,13 +91,9 @@ const courseLogoVW = "assets/img/VW-logo-monogram_on_white.svg";
 const providerLogoVW = "assets/img/VW-logo-long_on_black_long.svg";
 const altVW = "Vectorworks Logo";
 
-//NCASS
-const courseLogoFSA = ""
-const providerLogoNCASS = ""
-const providerAltNCASS = ""
 
-//* Handlebars(HB) Template Context 
-// Design Section Context
+//! Handlebars(HB) Template Context
+//* Design Section Context
 const designContext = {
   course: [
     // Adobe InDesign - Essentials Course
@@ -113,7 +164,7 @@ const designContext = {
   ],
 };
 
-// Web Dev Section
+//* Web Dev Section
 const webDevContext = {
   course: [
     // Code Foundations - Career Path
@@ -195,10 +246,10 @@ const webDevContext = {
       providerLogoSrc: providerLogoCC,
       providerLogoAlt: providerAltCC,
     },
-  ]
+  ],
 };
 
-// Networking Section
+//* Networking Section
 const networkingContext = {
   course: [
     // Program - Specific
@@ -214,26 +265,66 @@ const networkingContext = {
       providerLogoSrc: providerLogoSS,
       providerLogoAlt: providerAltSS,
     },
-  ]
+  ],
 };
 
-// Safety Section
+//* Safety Section
 const safetyContext = {
   course: [
-    // NCASS - Lvl 1 Food Hygiene Training 
+    // NCRQ - Safety for Managers
+    {
+      courseLink: "https://www.imtraininguk.com/health-and-safety-courses/",
+      courseLogoSrc: courseLogoSafety,
+      courseLogoAlt: courseAltSafety,
+      certLink: certNCRQ,
+      programText: "NCRQ",
+      specificText: "Safety for Managers",
+      hrs: "12hrs + Oral Assessments",
+      date: "June, 2020",
+      providerLogoSrc: providerLogoNCRQ,
+      providerLogoAlt: providerAltNCRQ,
+    },
+    // NCASS - HACCP Training - Lvl 1 & 2
+    {
+      courseLink:
+        "https://www.ncass.org.uk/training/health-safety-courses/haccp-training/",
+      courseLogoSrc: courseLogoFSA,
+      courseLogoAlt: courseAltFSA,
+      certLink: certNCASS3,
+      programText: "NCASS",
+      specificText: "HACCP Training - Lvl 1 & 2",
+      hrs: "20hrs + Exam",
+      date: "June, 2020",
+      providerLogoSrc: providerLogoNCASS,
+      providerLogoAlt: providerAltNCASS,
+    },
+    // NCASS - Food Hygiene Training - Lvl 2
+    {
+      courseLink: "https://www.ncass.org.uk/training/food-hygiene/level-2/",
+      courseLogoSrc: courseLogoFSA,
+      courseLogoAlt: courseAltFSA,
+      certLink: certNCASS2,
+      programText: "NCASS",
+      specificText: "Food Hygiene Training - Lvl 2",
+      hrs: "10hrs + Exam",
+      date: "June, 2020",
+      providerLogoSrc: providerLogoNCASS,
+      providerLogoAlt: providerAltNCASS,
+    },
+    // NCASS - Food Hygiene Training - Lvl 1
     {
       courseLink: "https://www.ncass.org.uk/training/food-hygiene/level-1/",
-      courseLogoSrc: "assets/img/Adobe-InDesign-CC-01.svg",
-      courseLogoAlt: courseAltAdobe,
-      certLink: certTranscriptSS,
-      programText: "Adobe InDesign",
-      specificText: "Essentials Course",
-      hrs: "6.5hrs",
-      date: "June, 2020",
-      providerLogoSrc: providerLogoSS,
-      providerLogoAlt: providerAltSS,
+      courseLogoSrc: courseLogoFSA,
+      courseLogoAlt: courseAltFSA,
+      certLink: certNCASS1,
+      programText: "NCASS",
+      specificText: "Food Hygiene Training - Lvl 1",
+      hrs: "10hrs + Exam",
+      date: "June, 2019",
+      providerLogoSrc: providerLogoNCASS,
+      providerLogoAlt: providerAltNCASS,
     },
-  ]
+  ],
 };
 
 // Business Section
@@ -252,7 +343,7 @@ const businessContext = {
       providerLogoSrc: providerLogoSS,
       providerLogoAlt: providerAltSS,
     },
-  ]
+  ],
 };
 
 // Engineering Section
@@ -336,11 +427,11 @@ const engineeringContext = {
       providerLogoSrc: providerLogoVW,
       providerLogoAlt: altVW,
     },
-  ]
+  ],
 };
 
 
-//* Handlebars(HB) Expressions
+//! Handlebars(HB) Expressions
 // Standard Expressions
 const templateElement = document.getElementById("templateHB");
 const templateSource = templateElement.innerHTML;
