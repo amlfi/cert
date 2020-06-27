@@ -27,7 +27,7 @@ const certModalNCASS1 = () => {
 // Food Hygeine Training Lv 2
 const certNCASS2 = "javascript:certModalNCASS2()";
 const certModalNCASS2 = () => {
-  $(".imagepreview").attr("src", "/assets/img/img_locked.svg"); // Certificate Image Src
+  $(".imagepreview").attr("src", "/assets/img/code_onWhite.svg"); // Certificate Image Src
   $("#imagemodal").modal("show");
   document.getElementById("modal-caption").innerHTML =
     "NCASS &nbsp &mdash; &nbsp Food Hygiene Training Lvl 2"; // Caption Text
