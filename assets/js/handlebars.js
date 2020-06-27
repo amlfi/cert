@@ -18,7 +18,7 @@ const certTranscriptVW =
 // Food Hygeine Training Lv 1
 const certNCASS1 = "javascript:certModalNCASS1()";
 const certModalNCASS1 = () => {
-  $(".imagepreview").attr("src", "/assets/img/img_locked.svg"); // Certificate Image Src
+  $(".imagepreview").attr("src", "assets/img/img_locked-01.svg"); // Certificate Image Src
   $("#imagemodal").modal("show");
   document.getElementById("modal-caption").innerHTML =
     "NCASS &nbsp &mdash; &nbsp Food Hygiene Training Lvl 1"; // Caption Text
@@ -27,7 +27,7 @@ const certModalNCASS1 = () => {
 // Food Hygeine Training Lv 2
 const certNCASS2 = "javascript:certModalNCASS2()";
 const certModalNCASS2 = () => {
-  $(".imagepreview").attr("src", "/assets/img/code_onWhite.svg"); // Certificate Image Src
+  $(".imagepreview").attr("src", "assets/img/code_onWhite.svg"); // Certificate Image Src
   $("#imagemodal").modal("show");
   document.getElementById("modal-caption").innerHTML =
     "NCASS &nbsp &mdash; &nbsp Food Hygiene Training Lvl 2"; // Caption Text
@@ -36,7 +36,7 @@ const certModalNCASS2 = () => {
 // HACCP Certification Lv 1 & 2
 const certNCASS3 = "javascript:certModalNCASS3()";
 const certModalNCASS3 = () => {
-  $(".imagepreview").attr("src", "/assets/img/img_locked.svg"); // Certificate Image Src
+  $(".imagepreview").attr("src", "assets/img/img_locked.svg"); // Certificate Image Src
   $("#imagemodal").modal("show");
   document.getElementById("modal-caption").innerHTML =
     "NCASS &nbsp &mdash; &nbsp HACCP Certification Lv 1 & 2"; // Caption Text
@@ -46,7 +46,7 @@ const certModalNCASS3 = () => {
 // Safety for Managers
 const certNCRQ = "javascript:certModalNCRQ()";
 const certModalNCRQ = () => {
-  $(".imagepreview").attr("src", "/assets/img/img_locked.svg"); // Certificate Image Src
+  $(".imagepreview").attr("src", "assets/img/img_locked.png"); // Certificate Image Src
   $("#imagemodal").modal("show");
   document.getElementById("modal-caption").innerHTML =
     "NCRQ &nbsp &mdash; &nbsp Safety for Managers"; // Caption Text
