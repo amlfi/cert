@@ -36,6 +36,10 @@ const courseLogoVW = "assets/img/VW-logo-monogram_on_white.svg";
 const providerLogoVW = "assets/img/VW-logo-long_on_black_long.svg";
 const altVW = "Vectorworks Logo";
 
+//NCASS
+const courseLogoFSA = ""
+const providerLogoNCASS = ""
+const providerAltNCASS = ""
 
 //* Handlebars(HB) Template Context 
 // Design Section Context
@@ -216,9 +220,9 @@ const networkingContext = {
 // Safety Section
 const safetyContext = {
   course: [
-    // Program - Specific
+    // NCASS - Lvl 1 Food Hygiene Training 
     {
-      courseLink: "https://skl.sh/2UNR2ZZ",
+      courseLink: "https://www.ncass.org.uk/training/food-hygiene/level-1/",
       courseLogoSrc: "assets/img/Adobe-InDesign-CC-01.svg",
       courseLogoAlt: courseAltAdobe,
       certLink: certTranscriptSS,
