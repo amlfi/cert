@@ -287,22 +287,7 @@ tr td.certCell {
   position: relative;
   top: 0.45rem;
   left: 0.45rem;
-}
-
-.iconLinkedIn {
-  background: no-repeat url("/assets/img/linkedin.svg");
-}
-
-.iconFacebook {
-  background: no-repeat url("/assets/img/facebook-square.svg");
-}
-
-.iconInstagram {
-  background: no-repeat url("/assets/img/instagram.svg");
-}
-
-.iconTwitter {
-  background: no-repeat url("https://i.ibb.co/vs5yM8Z/twitter.png");
+  background-repeat: no-repeat;
 }
 
 .footer-dark .social > a {
