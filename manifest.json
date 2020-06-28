@@ -5,6 +5,7 @@
   "start_url": "/?homescreen=1",
   "background_color": "#1c2c59",
   "theme_color": "#061531",
+  "display": "fullscreen",
   "icons": [{
     "src": "favicon.png",
     "sizes": "256x256",
