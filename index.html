@@ -38,21 +38,20 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+
   </head>
 
   <body>
@@ -82,7 +81,7 @@
         <div class="col-sm-12 col-md-8 col-lg-9 rightBio">
           <div class="row">
             <div class="col">
-              <h3 class="title">CERTIFICATIONS</h3>
+              <h3 class="title">CERTIFICATIONS & TRAINING</h3>
             </div>
           </div>
           <div class="row">
@@ -262,32 +261,32 @@
           <div class="row align-items-baseline">
             <!-- Left Footer -->
             <div
-              class="col text-left align-self-center item social icon-social"
+              class="col text-left social"
             >
               <!-- LinkedIn Icon -->
               <a
                 href="https://www.linkedin.com/in/anthonymfitzgerald/"
                 target="_blank"
               >
-                <i class="icon ion-social-linkedin-outline"> </i>
+                <i class=" iconFoot iconLinkedIn"> </i>
               </a>
               <!-- Facebook Icon -->
               <a
                 href="https://www.facebook.com/anthony.m.fitzgerald/"
                 target="_blank"
               >
-                <i class="icon ion-social-facebook"> </i>
+                <i class="iconFoot iconFacebook"> </i>
               </a>
               <!-- Instagram Icon -->
               <a
                 href="https://www.instagram.com/amlfitzgerald/"
                 target="_blank"
               >
-                <i class="icon ion-social-instagram"> </i>
+                <i class="iconFoot iconInstagram"> </i>
               </a>
               <!-- Twitter Icon -->
               <a href="https://twitter.com/AMLFITZ" target="_blank">
-                <i class="icon ion-social-twitter"> </i>
+                <i class="iconFoot iconTwitter"> </i>
               </a>
             </div>
 
@@ -303,7 +302,7 @@
     <!-- Bouncing Arrow Fade on Scroll -->
     <div class="containerScroll">
       <div class="arrow bounce">
-        <i id="arrowI" class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
+        <i id="arrowI" class="fas fa-arrow-down fa-2x" aria-hidden="true"></i>
       </div>
     </div>
 
@@ -325,7 +324,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <img src="" class="imagepreview" style="width: 100%;" />
+            <img src="#" class="imagepreview" style="width: 100%;" />
           </div>
           <div class="modal-foot">
             <p id="modal-caption">
@@ -336,15 +335,25 @@
       </div>
     </div>
 
-    <!-- Scripts -->
+    <!--! Scripts -->
+    <!-- #region (Scripts) -->
+    <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Animate on Scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="assets/js/aos.js"></script>
 
+    <!-- My Script File -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Font Awesome -->
+    <script defer src="assets/js/solid.min.js"></script>
+    <script defer src="assets/js/fontawesome.min.js"></script>
+
+    <!--* Handlebars -->
     <!-- Handlebars Template-->
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script id="templateHB" type="text/x-handlebars-template">
       {{#each course}}
         <tr>
@@ -398,6 +407,10 @@
         </tr>
       {{/each}}
     </script>
+    <!-- Handlebars Functions -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="assets/js/handlebars.js"></script>
+    <!-- #endregion (Scripts) -->
+
   </body>
 </html>

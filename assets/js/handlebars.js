@@ -1,99 +1,137 @@
-
 //! URL Links
-// Codecademy
+//#region (URLs)
+
+//* Codecademy URLs
+// Course Transcript
 const certTranscriptCC = "https://www.codecademy.com/profiles/AMLFI";
 
-//SkillShare
+//* SkillShare URLs
+// Course Transcript
 const certTranscriptSS = "https://www.skillshare.com/user/amlfitzgerald";
 
-// Vectorworks
+//* Vectorworks URLs
+// Course Transcript
 const courseTranscriptVW =
   "https://university.vectorworks.net/local/vectscript/s.php/GMtBPU";
+// Certificate Transcript
 const certTranscriptVW =
   "https://university.vectorworks.net/local/vectscript/s.php/4ZsDqc";
 
+//#endregion (URLs)
 
-//! Modal Links
-//* NCASS
-// Food Hygeine Training Lv 1
-const certNCASS1 = "javascript:certModalNCASS1()";
-const certModalNCASS1 = () => {
-  $(".imagepreview").attr("src", "assets/img/img_locked.svg"); // Certificate Image Src
+
+//! Modals
+//#region (Modals)
+
+//* Modal Function (Template)
+const modalSrc = (certImage, captionText) => {
+  $(".imagepreview").attr("src", certImage); // Certificate Image Src
   $("#imagemodal").modal("show");
-  document.getElementById("modal-caption").innerHTML =
-    "NCASS &nbsp &mdash; &nbsp Food Hygiene Training Lvl 1"; // Caption Text
+  document.getElementById("modal-caption").innerHTML = captionText; // Caption Text
 };
+
+//* NCASS (Modals)
+// Food Hygeine Training Lv 1
+const certNCASS_FH1 = () => {
+  modalSrc(certImageNCASS_FH1, certAltNCASS_FH1);
+};
+const certNCASS_FH1_HB = "javascript:certNCASS_FH1()";
 
 // Food Hygeine Training Lv 2
-const certNCASS2 = "javascript:certModalNCASS2()";
-const certModalNCASS2 = () => {
-  $(".imagepreview").attr("src", "assets/img/img_locked.svg"); // Certificate Image Src
-  $("#imagemodal").modal("show");
-  document.getElementById("modal-caption").innerHTML =
-    "NCASS &nbsp &mdash; &nbsp Food Hygiene Training Lvl 2"; // Caption Text
+const certNCASS_FH2 = () => {
+  modalSrc(certImageNCASS_FH2, certAltNCASS_FH2);
 };
+const certNCASS_FH2_HB = "javascript:certNCASS_FH2()";
 
 // HACCP Certification Lv 1 & 2
-const certNCASS3 = "javascript:certModalNCASS3()";
-const certModalNCASS3 = () => {
-  $(".imagepreview").attr("src", "assets/img/img_locked.svg"); // Certificate Image Src
-  $("#imagemodal").modal("show");
-  document.getElementById("modal-caption").innerHTML =
-    "NCASS &nbsp &mdash; &nbsp HACCP Certification Lv 1 & 2"; // Caption Text
+const certNCASS_HACCP = () => {
+  modalSrc(certImageNCASS_HACCP, certAltNCASS_HACCP);
 };
+const certNCASS_HACCP_HB = "javascript:certNCASS_HACCP()";
 
-//* NCRQ
+//* NCRQ (Modals)
 // Safety for Managers
-const certNCRQ = "javascript:certModalNCRQ()";
-const certModalNCRQ = () => {
-  $(".imagepreview").attr("src", "assets/img/img_locked.svg"); // Certificate Image Src
-  $("#imagemodal").modal("show");
-  document.getElementById("modal-caption").innerHTML =
-    "NCRQ &nbsp &mdash; &nbsp Safety for Managers"; // Caption Text
+const certNCRQ = () => {
+  modalSrc(certImageNCRQ, certAltNCRQ);
 };
+const certNCRQ_HB = "javascript:certNCRQ()";
+
+//#endregion (Modals)
 
 
-//! Logos
-// Adobe
-const courseLogoAI = "assets/img/Adobe-Illustrator-CC-01.svg";
-const courseLogoAN = "assets/img/Adobe-Animate-CC-01.svg";
-const courseLogoID = "assets/img/Adobe-InDesign-CC-01.svg";
-const courseLogoPS = "assets/img/Adobe-Photoshop-CC-01.svg";
-const courseLogoXD = "assets/img/adobe-experience-design-1.svg";
+//! Images, Logos & Captions (Src)
+// #region (Src)
+
+//* Generic (Src)
+const genLogoLocked = "assets/img/img_locked.svg";
+const emDash = "&nbsp &mdash; &nbsp";
+
+//* Adobe (Src)
+const courseLogoAI = "assets/img/Adobe-Illustrator.svg";
+const courseLogoAN = "assets/img/Adobe-Animate.svg";
+const courseLogoID = "assets/img/Adobe-InDesign.svg";
+const courseLogoPS = "assets/img/Adobe-Photoshop.svg";
+const courseLogoXD = "assets/img/Adobe-XD.svg";
 const courseAltAdobe = "Adobe Logo";
 
-// Codecademy
+//* Codecademy (Src)
+// codecademy - Generic
+const providerNameCC = "Codecademy";
 const providerLogoCC = "assets/img/codecademy_onBlack.svg";
 const providerAltCC = "Codecademy Logo";
 
-// NCASS
-const courseLogoFSA = "assets/img/FoodStdsAgency_monogram.svg";
-const courseAltFSA = "Food Standards Authority Logo";
+//* NCASS (Src)
+// NCASS - Generic
+const providerNameNCASS = "NCASS";
 const providerLogoNCASS = "assets/img/NCASS_Logo.svg";
 const providerAltNCASS = "NCASS Logo";
+const courseLogoFSA = "assets/img/FoodStdsAgency_monogram.svg";
+const courseAltFSA = "Food Standards Authority Logo";
+// Food Hygiene Training - Lvl 1
+const certNameNCASS_FH1 = "Food Hygiene Training Lvl 1";
+const certImageNCASS_FH1 = "assets/img/img_locked.svg";
+const certAltNCASS_FH1 = providerNameNCASS + emDash + certNameNCASS_FH1;
+// Food Hygiene Training - Lvl 2
+const certNameNCASS_FH2 = "Food Hygiene Training Lvl 2";
+const certImageNCASS_FH2 = "assets/img/img_locked.svg";
+const certAltNCASS_FH2 = providerNameNCASS + emDash + certNameNCASS_FH2;
+// HACCP Training - Lvl 1 & 2
+const certNameNCASS_HACCP = "HACCP Training Lvl 1 & 2";
+const certImageNCASS_HACCP = "assets/img/img_locked.svg";
+const certAltNCASS_HACCP = providerNameNCASS + emDash + certNameNCASS_HACCP;
 
-// NCRQ
-const courseLogoSafety = "assets/img/generic_safety.svg";
-const courseAltSafety = "Generic Safety Logo";
+//* NCRQ (Src)
+// NCRQ - Generic
+const providerNameNCRQ = "NCRQ";
 const providerLogoNCRQ = "assets/img/NCRQ.svg";
 const providerAltNCRQ = "NCRQ Logo";
+// NCRQ - Safety for Managers
+const courseLogoSafety = "assets/img/generic_safety.svg";
+const courseAltSafety = "Generic Safety Logo";
+const certNameNCRQ_SFM = "Safety for Managers";
+const certImageNCRQ = "assets/img/img_locked.svg";
+const certAltNCRQ = providerNameNCRQ + emDash + certNameNCRQ_SFM;
 
-// SkillShare
-const providerLogoSS = "assets/img/Skillshare-logo-header-logged-in-2020.svg";
+//* SkillShare (Src)
+const providerLogoSS = "assets/img/Skillshare-logo.svg";
 const providerAltSS = "SkillShare Logo";
 
-// Vectorworks
+//* Vectorworks (Src)
 const courseLogoBIM = "assets/img/bsi.svg";
 const courseAltBIM = "BIM Logo";
 const courseLogoDWG = "assets/img/dwg.svg";
 const courseAltDWG = "DWG Logo";
 const courseLogoVW = "assets/img/VW-logo-monogram_on_white.svg";
-const providerLogoVW = "assets/img/VW-logo-long_on_black_long.svg";
+const providerLogoVW = "assets/img/VW-logo-long_on_black.svg";
 const altVW = "Vectorworks Logo";
 
+// #endregion (Src)
 
-//! Handlebars(HB) Template Context
-//* Design Section Context
+
+//! Handlebars Template - HB Context
+//#region (HB Context)
+
+//* Design Section - HB Context
 const designContext = {
   course: [
     // Adobe InDesign - Essentials Course
@@ -164,7 +202,7 @@ const designContext = {
   ],
 };
 
-//* Web Dev Section
+//* Web Dev Section - HB Context
 const webDevContext = {
   course: [
     // Code Foundations - Career Path
@@ -173,7 +211,7 @@ const webDevContext = {
       courseLogoSrc: "assets/img/codeFoundations_onWhite.svg",
       courseLogoAlt: providerAltCC,
       certLink: certTranscriptCC,
-      programText: "Codecademy",
+      programText: providerNameCC,
       specificText: "Career Path - Code Foundations",
       hrs: "2 Weeks",
       date: "June, 2020",
@@ -187,7 +225,7 @@ const webDevContext = {
       courseLogoSrc: "assets/img/buildWebsite.svg",
       courseLogoAlt: providerAltCC,
       certLink: certTranscriptCC,
-      programText: "Codecademy",
+      programText: providerNameCC,
       specificText: "Skill Path - HTML5 Websites with Github",
       hrs: "10 Weeks",
       date: "June, 2020",
@@ -213,7 +251,7 @@ const webDevContext = {
       courseLogoSrc: "assets/img/code_onWhite.svg",
       courseLogoAlt: providerAltCC,
       certLink: certTranscriptCC,
-      programText: "Codecademy",
+      programText: providerNameCC,
       specificText: "Course - Learn How To Code",
       hrs: "6hrs",
       date: "June, 2020",
@@ -226,7 +264,7 @@ const webDevContext = {
       courseLogoSrc: "assets/img/bootstrap_icon.svg",
       courseLogoAlt: "Bootstrap Logo",
       certLink: certTranscriptCC,
-      programText: "Codecademy",
+      programText: providerNameCC,
       specificText: "Course - Learn Bootstrap",
       hrs: "3hrs",
       date: "June, 2020",
@@ -239,7 +277,7 @@ const webDevContext = {
       courseLogoSrc: "assets/img/html-5-notext.svg",
       courseLogoAlt: "HTML Logo",
       certLink: certTranscriptCC,
-      programText: "Codecademy",
+      programText: providerNameCC,
       specificText: "Course - Learn HTML",
       hrs: "9hrs",
       date: "May, 2020",
@@ -249,7 +287,7 @@ const webDevContext = {
   ],
 };
 
-//* Networking Section
+//* Networking Section - HB Context
 const networkingContext = {
   course: [
     // Program - Specific
@@ -268,17 +306,17 @@ const networkingContext = {
   ],
 };
 
-//* Safety Section
+//* Safety Section - HB Context
 const safetyContext = {
   course: [
-    // NCRQ - Safety for Managers
+    // NCRQ - Safety for Managers //
     {
       courseLink: "https://www.imtraininguk.com/health-and-safety-courses/",
       courseLogoSrc: courseLogoSafety,
       courseLogoAlt: courseAltSafety,
-      certLink: certNCRQ,
-      programText: "NCRQ",
-      specificText: "Safety for Managers",
+      certLink: certNCRQ_HB,
+      programText: providerNameNCRQ,
+      specificText: certNameNCRQ_SFM,
       hrs: "12hrs + Oral Assessments",
       date: "June, 2020",
       providerLogoSrc: providerLogoNCRQ,
@@ -290,9 +328,9 @@ const safetyContext = {
         "https://www.ncass.org.uk/training/health-safety-courses/haccp-training/",
       courseLogoSrc: courseLogoFSA,
       courseLogoAlt: courseAltFSA,
-      certLink: certNCASS3,
-      programText: "NCASS",
-      specificText: "HACCP Training - Lvl 1 & 2",
+      certLink: certNCASS_HACCP_HB,
+      programText: providerNameNCASS,
+      specificText: certNameNCASS_HACCP,
       hrs: "20hrs + Exam",
       date: "June, 2020",
       providerLogoSrc: providerLogoNCASS,
@@ -303,9 +341,9 @@ const safetyContext = {
       courseLink: "https://www.ncass.org.uk/training/food-hygiene/level-2/",
       courseLogoSrc: courseLogoFSA,
       courseLogoAlt: courseAltFSA,
-      certLink: certNCASS2,
-      programText: "NCASS",
-      specificText: "Food Hygiene Training - Lvl 2",
+      certLink: certNCASS_FH2_HB,
+      programText: providerNameNCASS,
+      specificText: certNameNCASS_FH2,
       hrs: "10hrs + Exam",
       date: "June, 2020",
       providerLogoSrc: providerLogoNCASS,
@@ -316,9 +354,9 @@ const safetyContext = {
       courseLink: "https://www.ncass.org.uk/training/food-hygiene/level-1/",
       courseLogoSrc: courseLogoFSA,
       courseLogoAlt: courseAltFSA,
-      certLink: certNCASS1,
-      programText: "NCASS",
-      specificText: "Food Hygiene Training - Lvl 1",
+      certLink: certNCASS_FH1_HB,
+      programText: providerNameNCASS,
+      specificText: certNameNCASS_FH1,
       hrs: "10hrs + Exam",
       date: "June, 2019",
       providerLogoSrc: providerLogoNCASS,
@@ -327,7 +365,7 @@ const safetyContext = {
   ],
 };
 
-// Business Section
+//* Business Section - HB Context
 const businessContext = {
   course: [
     // Program - Specific
@@ -346,7 +384,7 @@ const businessContext = {
   ],
 };
 
-// Engineering Section
+//* Engineering Section - HB Context
 const engineeringContext = {
   course: [
     // Vectorworks - Core Concepts Classes
@@ -430,28 +468,35 @@ const engineeringContext = {
   ],
 };
 
+//#endregion (HB Context)
 
-//! Handlebars(HB) Expressions
-// Standard Expressions
+
+//! Handlebars - HB Expressions
+// #region (HB Expressions)
+
+//* Standard HB Expressions
 const templateElement = document.getElementById("templateHB");
 const templateSource = templateElement.innerHTML;
 const template = Handlebars.compile(templateSource);
 
-// Design Section Expressions
+//* HB Expressions - By Section
+// Design Section - HB Expressions
 const designCompiledHTML = template(designContext);
 document.getElementById("designHB").innerHTML = designCompiledHTML;
-// Web Dev Section Expressions
+// Web Dev Section - HB Expressions
 const webDevCompiledHTML = template(webDevContext);
 document.getElementById("webDevHB").innerHTML = webDevCompiledHTML;
-// Networking Section Expressions
+// Networking Section - HB Expressions
 const networkingCompiledHTML = template(networkingContext);
 document.getElementById("networkingHB").innerHTML = networkingCompiledHTML;
-// Safety Section Expressions
+// Safety Section - HB Expressions
 const safetyCompiledHTML = template(safetyContext);
 document.getElementById("safetyHB").innerHTML = safetyCompiledHTML;
-// Business Section Expressions
+// Business Section - HB Expressions
 const businessCompiledHTML = template(businessContext);
 document.getElementById("businessHB").innerHTML = businessCompiledHTML;
-// Engineering Section Expressions
+// Engineering Section - HB Expressions
 const engineeringCompiledHTML = template(engineeringContext);
 document.getElementById("engineeringHB").innerHTML = engineeringCompiledHTML;
+
+// #endregion (HB Expressions)

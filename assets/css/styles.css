@@ -1,10 +1,13 @@
-/* Base Styles */
+/*! Base Styles */
+/* #region (Base) */
 html {
   width: 100%;
 }
 
 body {
-  font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -34,15 +37,17 @@ h5 {
   padding-bottom: 0.5rem;
 }
 
- tr td.left {
+tr td.left {
   text-align: left;
 }
 
 tr td.right {
   text-align: right;
 }
+/* #endregion (Base Styles) */
 
-/* Sections */
+/*! Section Visibilities */
+/* #region (Visibilities) */
 #design {
   visibility: visible;
 }
@@ -66,8 +71,10 @@ tr td.right {
 #engineering {
   visibility: visible;
 }
+/* #endregion (Visibilities) */
 
-/* Header Section */
+/*! Header Styles */
+/* #region (Header) */
 #header {
   margin-top: 30px;
 }
@@ -87,8 +94,11 @@ tr td.right {
   margin: 0;
   padding: 0;
 }
+/* #endregion (Header) */
 
-/* Bio Section */
+/*! Bio Styles */
+/* #region (Bio) */
+
 #bioCtn {
   margin-top: 2rem;
 }
@@ -98,7 +108,7 @@ tr td.right {
   padding: 2rem 1rem 1.5rem 1rem;
   margin-bottom: 1rem;
   border-color: rgba(27, 26, 26, 0.3);
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 #bioImg {
@@ -132,8 +142,10 @@ tr td.right {
     padding-right: 4rem;
   }
 }
+/* #endregion (Bio) */
 
-/* Categories */
+/*! Category Styles */
+/* #region (Categories) */
 .catImg {
   border-radius: 5px;
   width: 100%;
@@ -144,7 +156,10 @@ tr td.right {
     border-radius: 0px;
   }
 }
+/* #endregion (Categories) */
 
+/*! Table Styles */
+/* #region (Table) */
 .table th {
   padding: 0.75rem;
 }
@@ -174,7 +189,8 @@ tr {
   vertical-align: middle;
 }
 
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
   color: #fff;
 }
 
@@ -239,10 +255,120 @@ tr td.certCell {
   text-align: left;
   padding-left: 1rem;
 }
+/* #endregion (Table) */
 
-/* Bouncing Arrow Fade on Scroll */
+
+/*! Footer-Dark Styles*/
+/* #region (Footer) */
+#footer {
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.footer-dark {
+  padding: 1.5rem 1rem 1rem 1rem;
+  color: #f0f9ff;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+  align-items: baseline;
+}
+
+@media (max-width: 575px) {
+  .icon-social {
+    padding: 0 1rem;
+  }
+}
+
+.iconFoot {
+  height: 0.7rem;
+  display: block;
+  position: relative;
+  top: 0.45rem;
+  left: 0.45rem;
+}
+
+.iconLinkedIn {
+  background: url("/assets/img/linkedin.svg");
+  background-repeat: no-repeat;
+}
+
+.iconFacebook {
+  background: url("/assets/img/facebook-square.svg");
+  background-repeat: no-repeat;
+}
+
+.iconInstagram {
+  background: url("/assets/img/instagram.svg");
+  background-repeat: no-repeat;
+}
+
+.iconTwitter {
+  background: url("/assets/img/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-dark .social > a {
+  font-size: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 26px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 4px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .social > a:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+/* #endregion (Footer) */
+
+/*! Bouncing Arrow Fade on Scroll */
+/* #region (Arrow) */
+
+.containerScroll {
+  height: 1vh;
+}
+
+#arrowI {
+  display: block;
+  color: rgba(255, 255, 255, 0.2);
+}
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  height: 30px;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
 @-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
@@ -256,7 +382,11 @@ tr td.certCell {
   }
 }
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -270,7 +400,11 @@ tr td.certCell {
   }
 }
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -290,115 +424,12 @@ tr td.certCell {
   }
 }
 
-.containerScroll {
-  height: 1vh;
-}
+/* #endregion (Arrow) */
 
-#arrowI {
-  display: block;
-  color: rgba(255, 255, 255, 0.2);
-}
-.arrow {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -20px;
-  height: 30px; 
-}
+/*! Modal Styles */
+/* #region (Modal) */
 
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-
-/* Footer-Dark */
-#footer {
-  margin: 2rem 0;
-  padding: 0;
-}
-
-.icon-social {
-  padding: 0;
-}
-
-.icon {
-  font-size: 1rem;
-}
-
-@media (max-width: 575px) {
-  .icon-social {
-    padding: 0 1rem;
-  }
-}
-
-.footer-dark {
-  padding: 50px 5px 20px 5px;
-  color: #f0f9ff;
-}
-
-@media (min-width: 300px) {
-  .footer-dark {
-    padding: 1.5rem 1rem 1rem 1rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer-dark .item:not(.social) {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer-dark .item.text {
-    margin-bottom: 0;
-  }
-}
-
-.footer-dark .item.social {
-  text-align: center;
-}
-
-@media (max-width: 991px) {
-  .footer-dark .item.social {
-    text-align: center;
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: 300px) {
-  .footer-dark .item.social > a {
-    font-size: 1rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    line-height: 26px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-    margin: 0 4px;
-    color: #fff;
-    opacity: 0.75;
-  }
-}
-
-.footer-dark .item.social > a:hover {
-  opacity: 0.9;
-  color: white;
-}
-
-.footer-dark .copyright {
-  text-align: center;
-  padding-top: 24px;
-  opacity: 0.3;
-  font-size: 13px;
-  margin-bottom: 0;
-}
-
-/** Modal */
-/* Modal (background) */
+/*^ Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -409,11 +440,11 @@ tr td.certCell {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
 }
 
-/* Modal (content) */
+/*^ Modal (content) */
 .modal-content {
   margin: auto;
   display: block;
@@ -425,7 +456,7 @@ tr td.certCell {
   border: 1px solid rgb(27, 27, 27);
 }
 
-/* Modal (caption) */
+/*^ Modal (caption) */
 #modal-caption {
   margin: auto;
   display: block;
@@ -436,8 +467,9 @@ tr td.certCell {
   padding: 1rem 0;
 }
 
-/* Modal (animation) */
-.modal-content, .modal-caption {  
+/*^ Modal (animation) */
+.modal-content,
+.modal-caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -445,16 +477,24 @@ tr td.certCell {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
-/* Modal (close button) */
+/*^ Modal (close button) */
 .close {
   position: absolute;
   top: 10px;
@@ -472,23 +512,27 @@ tr td.certCell {
   cursor: pointer;
 }
 
-/* Modal (media queries) */
-@media only screen and (max-width: 700px){
+/*^ Modal (media queries) */
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
 }
+/* #endregion (Modal) */
 
-/** Tooltips */
- .tooltip-inner {
-  background-color: rgba(22, 22, 22);
+/*! Tooltip Styles */
+/* #region (Tooltips) */
+
+.tooltip-inner {
+  background-color: rgb(32, 32, 32);
   color: #ccc;
   /* border: 1px solid green; */
   /* padding: 15px; */
   font-size: 12px;
   font-style: italic;
-  height: 2rem;
-  line-height: 1.5rem;
+  height: 1.75rem;
+  line-height: 1.25rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+/* #endregion (Tooltips) */
