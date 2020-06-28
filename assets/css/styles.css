@@ -213,7 +213,6 @@ tr {
 @media (min-width: 300px) {
   .dblSlash {
     color: #fac76b;
-    font-weight: 300;
     padding: 0 6px;
   }
 }
@@ -485,7 +484,6 @@ tr td.certCell {
   right: 15px;
   color: rgba(27, 27, 27, 0.219);
   font-size: 26px;
-  /* font-weight: bold; */
   transition: 0.175s ease;
 }
 
