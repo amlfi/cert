@@ -1,4 +1,3 @@
-
 // Clickable Row
 $(document).ready(function ($) {
   $(".clickable-row").click(function () {

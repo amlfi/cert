@@ -293,7 +293,7 @@ const networkingContext = {
     // Program - Specific
     {
       courseLink: "https://skl.sh/2UNR2ZZ",
-      courseLogoSrc: "assets/img/Adobe-InDesign-CC-01.svg",
+      courseLogoSrc: "assets/img/Adobe-InDesign.svg",
       courseLogoAlt: courseAltAdobe,
       certLink: certTranscriptSS,
       programText: "Adobe InDesign",
@@ -371,7 +371,7 @@ const businessContext = {
     // Program - Specific
     {
       courseLink: "https://skl.sh/2UNR2ZZ",
-      courseLogoSrc: "assets/img/Adobe-InDesign-CC-01.svg",
+      courseLogoSrc: "assets/img/Adobe-InDesign.svg",
       courseLogoAlt: courseAltAdobe,
       certLink: certTranscriptSS,
       programText: "Adobe InDesign",
