@@ -301,12 +301,12 @@ tr td.certCell {
 }
 
 .iconInstagram {
-  background: url("/assets/img/instagram.svg");
+  background: url("assets/img/instagram.svg");
   background-repeat: no-repeat;
 }
 
 .iconTwitter {
-  background: url("/assets/img/twitter.svg");
+  background: url("/assets/img/twitter.png");
   background-repeat: no-repeat;
 }
 
