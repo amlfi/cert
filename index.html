@@ -456,6 +456,13 @@
     <!-- Handlebars Functions -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="assets/js/handlebars.js"></script>
+
+    <!--* Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/assets/js/sw.js');
+      }
+    </script>
     <!-- #endregion (Scripts) -->
 
   </body>
