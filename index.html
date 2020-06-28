@@ -48,7 +48,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"
     />
     <!--* My Stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
 
     <!--* Web App Manifest -->
     <link rel="manifest" href="manifest.json" />
@@ -393,10 +393,10 @@
     
     <!--* Animate on Scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/aos.min.js"></script>
 
     <!--* My Script File -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.min.js"></script>
 
     <!--* Font Awesome -->
     <script defer src="assets/js/solid.min.js"></script>
@@ -462,22 +462,8 @@
     </script>
     <!-- Handlebars Functions -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script src="assets/js/handlebars.js"></script>
+    <script src="assets/js/handlebars.min.js"></script>
 
-    <!--* Service Worker -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js').then(function(registration) {
-            // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, function(err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
-          });
-        });
-      }
-    </script>
     <!-- #endregion (Scripts) -->
 
   </body>
