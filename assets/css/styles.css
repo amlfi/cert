@@ -290,6 +290,10 @@ tr td.certCell {
   background-repeat: no-repeat;
 }
 
+.iconFootBig {
+  width: 0.8rem;
+}
+
 .footer-dark .social > a {
   font-size: 1rem;
   width: 1.5rem;
