@@ -290,23 +290,19 @@ tr td.certCell {
 }
 
 .iconLinkedIn {
-  background-image: url("/assets/img/linkedin.svg");
-  background-repeat: no-repeat;
+  background: no-repeat url("/assets/img/linkedin.svg");
 }
 
 .iconFacebook {
-  background: url("/assets/img/facebook-square.svg");
-  background-repeat: no-repeat;
+  background: no-repeat url("/assets/img/facebook-square.svg");
 }
 
 .iconInstagram {
-  background: url("assets/img/instagram.svg");
-  background-repeat: no-repeat;
+  background: no-repeat url("/assets/img/instagram.svg");
 }
 
 .iconTwitter {
-  background: url("/assets/img/twitter.png");
-  background-repeat: no-repeat;
+  background: no-repeat url("/assets/img/twitter.svg");
 }
 
 .footer-dark .social > a {
