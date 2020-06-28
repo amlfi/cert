@@ -1,0 +1,13 @@
+{
+  "name": "Anthony's Certifications & Training",
+  "short_name": "AF Certs",
+  "description": "A collection of all certifications and training completed by Anthony Fitzgerald",
+  "start_url": "/?homescreen=1",
+  "background_color": "#1c2c59",
+  "theme_color": "#061531",
+  "icons": [{
+    "src": "favicon.ico",
+    "sizes": "256x256",
+    "type": "image/x-icon"
+  }]
+}
