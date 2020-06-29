@@ -239,16 +239,6 @@ tr {
   }
 }
 
-.zoomIn {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-.zoomIn:hover {
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
-}
 
 tr td.certCell {
   text-align: left;
@@ -408,6 +398,38 @@ tr td.certCell {
 }
 
 /* #endregion (Arrow) */
+
+/*! Zoom Animations */
+/* #region (Zoom) */
+.zoomIn {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.zoomIn:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.zoomInSmall {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.zoomInSmall:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  }
+
+/* #endregion (Zoom) */
 
 /*! Modal Styles */
 /* #region (Modal) */

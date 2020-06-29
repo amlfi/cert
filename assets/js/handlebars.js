@@ -2,20 +2,21 @@
 //#region (URLs)
 
 //* Codecademy URLs
-// Course Transcript
+/// Course Transcript
 const certTranscriptCC = "https://www.codecademy.com/profiles/AMLFI";
 
 //* SkillShare URLs
-// Course Transcript
+/// Course Transcript
 const certTranscriptSS = "https://www.skillshare.com/user/amlfitzgerald";
 
 //* Vectorworks URLs
-// Course Transcript
+/// Course Transcript
 const courseTranscriptVW =
-  "https://university.vectorworks.net/local/vectscript/s.php/GMtBPU";
-// Certificate Transcript
+  "https://university.vectorworks.net/local/vectscript/s.php/26oCCO";
+  
+/// Certificate Transcript
 const certTranscriptVW =
-  "https://university.vectorworks.net/local/vectscript/s.php/4ZsDqc";
+  "https://university.vectorworks.net/local/vectscript/s.php/TzFJdz";
 
 //#endregion (URLs)
 
@@ -31,30 +32,55 @@ const modalSrc = (certImage, captionText) => {
 };
 
 //* NCASS (Modals)
-// Food Hygeine Training Lv 1
+// #region (NCASS)
+/// Food Hygeine Training Lv 1
 const certNCASS_FH1 = () => {
   modalSrc(certImageNCASS_FH1, certAltNCASS_FH1);
 };
 const certNCASS_FH1_HB = "javascript:certNCASS_FH1()";
-
-// Food Hygeine Training Lv 2
+/// Food Hygeine Training Lv 2
 const certNCASS_FH2 = () => {
   modalSrc(certImageNCASS_FH2, certAltNCASS_FH2);
 };
 const certNCASS_FH2_HB = "javascript:certNCASS_FH2()";
-
-// HACCP Certification Lv 1 & 2
+/// HACCP Certification Lv 1 & 2
 const certNCASS_HACCP = () => {
   modalSrc(certImageNCASS_HACCP, certAltNCASS_HACCP);
 };
 const certNCASS_HACCP_HB = "javascript:certNCASS_HACCP()";
+// #endregion (NCASS)
 
 //* NCRQ (Modals)
-// Safety for Managers
+/// Safety for Managers
 const certNCRQ = () => {
   modalSrc(certImageNCRQ, certAltNCRQ);
 };
 const certNCRQ_HB = "javascript:certNCRQ()";
+
+//* Vectorworks (Modals)
+/// VW - Core Concepts Training
+const certVW_Core = () => {
+  modalSrc(certImageVW_Core, certAltVW_Core);
+};
+const certVW_Core_HB = "javascript:certVW_Core()";
+
+/// VW - Intermediate Concepts Training
+const certVW_Inter = () => {
+  modalSrc(certImageVW_Inter, certAltVW_Inter);
+};
+const certVW_Inter_HB = "javascript:certVW_Inter()";
+
+/// VW - BIM for Landscape Design
+const certVW_BIM = () => {
+  modalSrc(certImageVW_BIM, certAltVW_BIM);
+};
+const certVW_BIM_HB = "javascript:certVW_BIM()";
+
+/// VW - DWG File Exchange
+const certVW_DWG = () => {
+  modalSrc(certImageVW_DWG, certAltVW_DWG);
+};
+const certVW_DWG_HB = "javascript:certVW_DWG()";
 
 //#endregion (Modals)
 
@@ -63,45 +89,53 @@ const certNCRQ_HB = "javascript:certNCRQ()";
 // #region (Src)
 
 //* Generic (Src)
+// #region (Generic)
 const genLogoLocked = "assets/img/img_locked.svg";
 const emDash = "&nbsp &mdash; &nbsp";
+//#endregion (Generic)
 
 //* Adobe (Src)
+// #region (Adobe)
 const courseLogoAI = "assets/img/Adobe-Illustrator.svg";
 const courseLogoAN = "assets/img/Adobe-Animate.svg";
 const courseLogoID = "assets/img/Adobe-InDesign.svg";
 const courseLogoPS = "assets/img/Adobe-Photoshop.svg";
 const courseLogoXD = "assets/img/Adobe-XD.svg";
 const courseAltAdobe = "Adobe Logo";
+//#endregion (Adobe)
 
 //* Codecademy (Src)
-// codecademy - Generic
+// #region (CC)
+/// Codecademy - Generic
 const providerNameCC = "Codecademy";
 const providerLogoCC = "assets/img/codecademy_onBlack.svg";
 const providerAltCC = "Codecademy Logo";
+// #endregion (CC)
 
 //* NCASS (Src)
-// NCASS - Generic
+// #region (NCASS)
+/// NCASS - Generic
 const providerNameNCASS = "NCASS";
 const providerLogoNCASS = "assets/img/NCASS_Logo.svg";
 const providerAltNCASS = "NCASS Logo";
 const courseLogoFSA = "assets/img/FoodStdsAgency_monogram.svg";
 const courseAltFSA = "Food Standards Authority Logo";
-// Food Hygiene Training - Lvl 1
+/// Food Hygiene Training - Lvl 1
 const certNameNCASS_FH1 = "Food Hygiene Training Lvl 1";
 const certImageNCASS_FH1 = "assets/img/img_locked.svg";
 const certAltNCASS_FH1 = providerNameNCASS + emDash + certNameNCASS_FH1;
-// Food Hygiene Training - Lvl 2
+/// Food Hygiene Training - Lvl 2
 const certNameNCASS_FH2 = "Food Hygiene Training Lvl 2";
 const certImageNCASS_FH2 = "assets/img/img_locked.svg";
 const certAltNCASS_FH2 = providerNameNCASS + emDash + certNameNCASS_FH2;
-// HACCP Training - Lvl 1 & 2
+/// HACCP Training - Lvl 1 & 2
 const certNameNCASS_HACCP = "HACCP Training Lvl 1 & 2";
 const certImageNCASS_HACCP = "assets/img/img_locked.svg";
 const certAltNCASS_HACCP = providerNameNCASS + emDash + certNameNCASS_HACCP;
+//#endregion (NCASS)
 
 //* NCRQ (Src)
-// NCRQ - Generic
+// #region (NCRQ) - Generic
 const providerNameNCRQ = "NCRQ";
 const providerLogoNCRQ = "assets/img/NCRQ.svg";
 const providerAltNCRQ = "NCRQ Logo";
@@ -111,19 +145,45 @@ const courseAltSafety = "Generic Safety Logo";
 const certNameNCRQ_SFM = "Safety for Managers";
 const certImageNCRQ = "assets/img/img_locked.svg";
 const certAltNCRQ = providerNameNCRQ + emDash + certNameNCRQ_SFM;
+//#endregion (NCRQ)
 
 //* SkillShare (Src)
+//#region (SS)
 const providerLogoSS = "assets/img/Skillshare-logo.svg";
 const providerAltSS = "SkillShare Logo";
+//#endregion (SS)
 
 //* Vectorworks (Src)
+// #region (VW)
+/// VW - Generic
+const providerNameVW = "Vectorworks"
+const providerLogoVW = "assets/img/VW-logo-long_on_black.svg";
+const providerAltVW = "Vectorworks University"
+const courseLogoVW = "assets/img/VW-logo-monogram_on_white.svg";
+const courseAltVW = "Vectorworks Logo";
+/// VW - BIM
 const courseLogoBIM = "assets/img/bsi.svg";
 const courseAltBIM = "BIM Logo";
+/// VW - DWG
 const courseLogoDWG = "assets/img/dwg.svg";
 const courseAltDWG = "DWG Logo";
-const courseLogoVW = "assets/img/VW-logo-monogram_on_white.svg";
-const providerLogoVW = "assets/img/VW-logo-long_on_black.svg";
-const altVW = "Vectorworks Logo";
+/// VW - Core Concepts Training
+const certNameVW_Core = "Core Concepts - Training"
+const certImageVW_Core = "assets/img/VW_Core-Concepts.jpg";
+const certAltVW_Core = providerNameVW + emDash + certNameVW_Core;
+/// VW - Intermediate Concepts Training
+const certNameVW_Inter = "Intermediate Concepts - Training"
+const certImageVW_Inter = "assets/img/VW_Intermediate-Concepts.jpg";
+const certAltVW_Inter = providerNameVW + emDash + certNameVW_Inter;
+/// VW - BIM for Landscape Design
+const certNameVW_BIM = "BIM for Landscape Design"
+const certImageVW_BIM = "assets/img/VW_BIM_Cert.jpg";
+const certAltVW_BIM = providerNameVW + emDash + certNameVW_BIM;
+/// VW - Intermediate Concepts Training
+const certNameVW_DWG = "DWG File Exchange"
+const certImageVW_DWG = "assets/img/VW_DWG_Cert.jpg";
+const certAltVW_DWG = providerNameVW + emDash + certNameVW_DWG;
+//#endregion (VW)
 
 // #endregion (Src)
 
@@ -387,89 +447,101 @@ const businessContext = {
 //* Engineering Section - HB Context
 const engineeringContext = {
   course: [
+    // Vectorworks - Intermediate Concepts Classes
+    {
+      courseLink: "https://university.vectorworks.net/course/view.php?id=234",
+      courseLogoSrc: courseLogoVW,
+      courseLogoAlt: courseAltVW,
+      certLink: certVW_Inter_HB,
+      programText: providerNameVW,
+      specificText: certNameVW_Inter,
+      hrs: "16hrs",
+      date: "June, 2020",
+      providerLogoSrc: providerLogoVW,
+      providerLogoAlt: courseAltVW,
+    },
     // Vectorworks - Core Concepts Classes
     {
       courseLink: "https://university.vectorworks.net/course/view.php?id=76",
       courseLogoSrc: courseLogoVW,
-      courseLogoAlt: altVW,
-      certLink: certTranscriptVW,
-      programText: "Vectorworks",
-      specificText: "Core Concepts Classes",
+      courseLogoAlt: courseAltVW,
+      certLink: certVW_Core_HB,
+      programText: providerNameVW,
+      specificText: certNameVW_Core,
       hrs: "16hrs",
       date: "June, 2020",
       providerLogoSrc: providerLogoVW,
-      providerLogoAlt: altVW,
+      providerLogoAlt: courseAltVW,
     },
     // Vectorworks Spotlight - Essentials Seminar
     {
       courseLink: "https://university.vectorworks.net/course/view.php?id=292",
       courseLogoSrc: courseLogoVW,
-      courseLogoAlt: altVW,
+      courseLogoAlt: courseAltVW,
       certLink: courseTranscriptVW,
-      programText: "Vectorworks Spotlight",
-      specificText: "Essentials Seminar",
+      programText: providerNameVW,
+      specificText: "Spotlight - Essentials Seminar",
       hrs: "4hrs",
       date: "May, 2020",
       providerLogoSrc: providerLogoVW,
-      providerLogoAlt: altVW,
+      providerLogoAlt: courseAltVW,
     },
     // Vectorworks Landmark - Essentials Seminar
     {
       courseLink: "https://university.vectorworks.net/course/view.php?id=217",
       courseLogoSrc: courseLogoVW,
-      courseLogoAlt: altVW,
+      courseLogoAlt: courseAltVW,
       certLink: courseTranscriptVW,
-      programText: "Vectorworks Landmark",
-      specificText: "Essentials Seminar",
+      programText: providerNameVW,
+      specificText: "Landmark - Essentials Seminar",
       hrs: "4hrs",
       date: "May, 2020",
       providerLogoSrc: providerLogoVW,
-      providerLogoAlt: altVW,
+      providerLogoAlt: courseAltVW,
     },
     // Vectorworks Architecht - Essentials Seminar
     {
       courseLink: "https://university.vectorworks.net/course/view.php?id=236",
       courseLogoSrc: courseLogoVW,
-      courseLogoAlt: altVW,
+      courseLogoAlt: courseAltVW,
       certLink: courseTranscriptVW,
-      programText: "Vectorworks Architecht",
-      specificText: "Essentials Seminar",
+      programText: providerNameVW,
+      specificText: "Architecht - Essentials Seminar",
       hrs: "2hrs",
       date: "May, 2020",
       providerLogoSrc: providerLogoVW,
-      providerLogoAlt: altVW,
+      providerLogoAlt: courseAltVW,
     },
     // Vectorworks - BIM for Landscape
     {
       courseLink: "https://university.vectorworks.net/course/view.php?id=73",
       courseLogoSrc: courseLogoBIM,
       courseLogoAlt: courseAltBIM,
-      certLink: certTranscriptVW,
-      programText: "Vectorworks",
-      specificText: "BIM for Landscape",
+      certLink: certVW_BIM_HB,
+      programText: providerNameVW,
+      specificText: certNameVW_BIM,
       hrs: "1hr + Exam",
       date: "May, 2020",
       providerLogoSrc: providerLogoVW,
-      providerLogoAlt: altVW,
+      providerLogoAlt: courseAltVW,
     },
     // Vectorworks - DWG File Exchange
     {
       courseLink: "https://university.vectorworks.net/course/view.php?id=181",
       courseLogoSrc: courseLogoDWG,
       courseLogoAlt: courseAltDWG,
-      certLink: certTranscriptVW,
-      programText: "Vectorworks",
-      specificText: "DWG File Exchange",
+      certLink: certVW_DWG_HB,
+      programText: providerNameVW,
+      specificText: certNameVW_DWG,
       hrs: "1hr + Exam",
       date: "May, 2020",
       providerLogoSrc: providerLogoVW,
-      providerLogoAlt: altVW,
+      providerLogoAlt: courseAltVW,
     },
   ],
 };
 
 //#endregion (HB Context)
-
 
 //! Handlebars - HB Expressions
 // #region (HB Expressions)
