@@ -423,8 +423,8 @@ tr td.certCell {
 }
 
 .zoomInSmall:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.025);
+  transform: scale(1.025);
   -webkit-transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   }
