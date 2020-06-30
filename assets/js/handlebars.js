@@ -13,7 +13,7 @@ const certTranscriptSS = "https://www.skillshare.com/user/amlfitzgerald";
 /// Course Transcript
 const courseTranscriptVW =
   "https://university.vectorworks.net/local/vectscript/s.php/26oCCO";
-  
+
 /// Certificate Transcript
 const certTranscriptVW =
   "https://university.vectorworks.net/local/vectscript/s.php/TzFJdz";
