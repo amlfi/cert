@@ -189,8 +189,8 @@ tr {
   vertical-align: middle;
 }
 
-body.hasHover .table-hover tbody tr:hover td,
-body.hasHover .table-hover tbody tr:hover th {
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
   color: #fff;
 }
 
@@ -297,7 +297,7 @@ tr td.certCell {
   opacity: 0.75;
 }
 
-body.hasHover .footer-dark .social > a:hover {
+.footer-dark .social > a:hover {
   opacity: 0.9;
   color: white;
 }
@@ -408,7 +408,7 @@ body.hasHover .footer-dark .social > a:hover {
   transition: 0.25s ease-in-out;
 }
 
-body.hasHover .zoomIn:hover {
+.zoomIn:hover {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
   -webkit-transition: 0.25s ease-in-out;
@@ -422,7 +422,7 @@ body.hasHover .zoomIn:hover {
   transition: 0.25s ease-in-out;
 }
 
-body.hasHover .zoomInSmall:hover {
+.zoomInSmall:hover {
   -webkit-transform: scale(1.025);
   transform: scale(1.025);
   -webkit-transition: transform 0.25s ease-in-out;
@@ -530,8 +530,8 @@ body.hasHover .zoomInSmall:hover {
   transition: 0.175s ease;
 }
 
-body.hasHover .close:hover,
-body.hasHover .close:focus {
+.close:hover,
+.close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
