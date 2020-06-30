@@ -189,8 +189,8 @@ tr {
   vertical-align: middle;
 }
 
-.table-hover tbody tr:hover td,
-.table-hover tbody tr:hover th {
+body.hasHover .table-hover tbody tr:hover td,
+body.hasHover .table-hover tbody tr:hover th {
   color: #fff;
 }
 
@@ -297,7 +297,7 @@ tr td.certCell {
   opacity: 0.75;
 }
 
-.footer-dark .social > a:hover {
+body.hasHover .footer-dark .social > a:hover {
   opacity: 0.9;
   color: white;
 }
@@ -408,7 +408,7 @@ tr td.certCell {
   transition: 0.25s ease-in-out;
 }
 
-.zoomIn:hover {
+body.hasHover .zoomIn:hover {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
   -webkit-transition: 0.25s ease-in-out;
@@ -422,7 +422,7 @@ tr td.certCell {
   transition: 0.25s ease-in-out;
 }
 
-.zoomInSmall:hover {
+body.hasHover .zoomInSmall:hover {
   -webkit-transform: scale(1.025);
   transform: scale(1.025);
   -webkit-transition: transform 0.25s ease-in-out;
@@ -434,7 +434,7 @@ tr td.certCell {
 /*! Modal Styles */
 /* #region (Modal) */
 
-/*^ Modal (background) */
+/*/ Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -447,13 +447,21 @@ tr td.certCell {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+  text-align: center;
 }
 
-/*^ Modal (content) */
+/*/ Modal Container */
+.modal-dialog {
+  width: auto;
+}
+
+/*/ Modal (content) */
+/* #region (content) */
 .modal-content {
   margin: auto;
   display: block;
   width: 100%;
+  max-height: 85vh;
   padding: 1rem 3rem;
   max-width: 700px;
   background-color: #0000005b;
@@ -461,7 +469,17 @@ tr td.certCell {
   border: 1px solid rgb(27, 27, 27);
 }
 
-/*^ Modal (caption) */
+.modal-body {
+  max-height: 70vh;
+}
+
+.imagepreview {
+  max-height: 65vh;
+}
+/* #endregion (content) */
+
+
+/*/ Modal (caption) */
 #modal-caption {
   margin: auto;
   display: block;
@@ -472,7 +490,8 @@ tr td.certCell {
   padding: 1rem 0;
 }
 
-/*^ Modal (animation) */
+/*/ Modal (animation) */
+/* #region (animation) */
 .modal-content,
 .modal-caption {
   -webkit-animation-name: zoom;
@@ -498,8 +517,10 @@ tr td.certCell {
     transform: scale(1);
   }
 }
+/* #endregion (animation) */
 
-/*^ Modal (close button) */
+/*/ Modal (close button) */
+/* #region (close) */
 .close {
   position: absolute;
   top: 10px;
@@ -509,19 +530,33 @@ tr td.certCell {
   transition: 0.175s ease;
 }
 
-.close:hover,
-.close:focus {
+body.hasHover .close:hover,
+body.hasHover .close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
+/*  #endregion (close) */
 
-/*^ Modal (media queries) */
-@media only screen and (max-width: 700px) {
+/*/ Modal (media queries) */
+/* #region (media) */
+@media (max-width: 575px) {
   .modal-content {
+    max-height: 90vh;
+  }
+  .imagepreview {
     width: 100%;
   }
 }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 700px;
+    margin: 1.75rem auto;
+  }
+}
+/* #endregion (media) */
+
 /* #endregion (Modal) */
 
 /*! Tooltip Styles */
@@ -538,5 +573,11 @@ tr td.certCell {
   line-height: 1.25rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+@media (max-width: 767px) {
+  .tooltip {
+    display: none !important;
+  }
 }
 /* #endregion (Tooltips) */

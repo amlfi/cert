@@ -122,15 +122,15 @@ const courseLogoFSA = "assets/img/FoodStdsAgency_monogram.svg";
 const courseAltFSA = "Food Standards Authority Logo";
 /// Food Hygiene Training - Lvl 1
 const certNameNCASS_FH1 = "Food Hygiene Training Lvl 1";
-const certImageNCASS_FH1 = "assets/img/img_locked.svg";
+const certImageNCASS_FH1 = "https://i.ibb.co/BPZs5pq/190603-FS1-NCASS.jpg";
 const certAltNCASS_FH1 = providerNameNCASS + emDash + certNameNCASS_FH1;
 /// Food Hygiene Training - Lvl 2
 const certNameNCASS_FH2 = "Food Hygiene Training Lvl 2";
-const certImageNCASS_FH2 = "assets/img/img_locked.svg";
+const certImageNCASS_FH2 = "https://i.ibb.co/BKnzQKm/200627-FS2-NCASS.jpg";
 const certAltNCASS_FH2 = providerNameNCASS + emDash + certNameNCASS_FH2;
 /// HACCP Training - Lvl 1 & 2
 const certNameNCASS_HACCP = "HACCP Training Lvl 1 & 2";
-const certImageNCASS_HACCP = "assets/img/img_locked.svg";
+const certImageNCASS_HACCP = "https://i.ibb.co/vDB0YB3/200627-HACCP-NCASS.jpg";
 const certAltNCASS_HACCP = providerNameNCASS + emDash + certNameNCASS_HACCP;
 //#endregion (NCASS)
 
@@ -168,11 +168,11 @@ const courseAltBIM = "BIM Logo";
 const courseLogoDWG = "assets/img/dwg.svg";
 const courseAltDWG = "DWG Logo";
 /// VW - Core Concepts Training
-const certNameVW_Core = "Core Concepts - Training"
+const certNameVW_Core = "Core Concepts Training"
 const certImageVW_Core = "assets/img/VW_Core-Concepts.jpg";
 const certAltVW_Core = providerNameVW + emDash + certNameVW_Core;
 /// VW - Intermediate Concepts Training
-const certNameVW_Inter = "Intermediate Concepts - Training"
+const certNameVW_Inter = "Intermediate Concepts Training"
 const certImageVW_Inter = "assets/img/VW_Intermediate-Concepts.jpg";
 const certAltVW_Inter = providerNameVW + emDash + certNameVW_Inter;
 /// VW - BIM for Landscape Design
