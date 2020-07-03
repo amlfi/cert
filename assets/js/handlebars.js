@@ -37,50 +37,63 @@ const modalSrc = (certImage, captionText) => {
 const certNCASS_FH1 = () => {
   modalSrc(certImageNCASS_FH1, certAltNCASS_FH1);
 };
-const certNCASS_FH1_HB = "javascript:certNCASS_FH1()";
+const certNCASS_FH1_Modal = "javascript:certNCASS_FH1()";
 /// Food Hygeine Training Lv 2
 const certNCASS_FH2 = () => {
   modalSrc(certImageNCASS_FH2, certAltNCASS_FH2);
 };
-const certNCASS_FH2_HB = "javascript:certNCASS_FH2()";
+const certNCASS_FH2_Modal = "javascript:certNCASS_FH2()";
 /// HACCP Certification Lv 1 & 2
 const certNCASS_HACCP = () => {
   modalSrc(certImageNCASS_HACCP, certAltNCASS_HACCP);
 };
-const certNCASS_HACCP_HB = "javascript:certNCASS_HACCP()";
+const certNCASS_HACCP_Modal = "javascript:certNCASS_HACCP()";
 // #endregion (NCASS)
 
 //* NCRQ (Modals)
+// #region (NCRQ) //
 /// Safety for Managers
 const certNCRQ = () => {
   modalSrc(certImageNCRQ, certAltNCRQ);
 };
-const certNCRQ_HB = "javascript:certNCRQ()";
+const certNCRQ_Modal = "javascript:certNCRQ()";
+// #endregion (NCRQ) //
+
+//* The Open University (Modals)
+// #region (TOU) //
+/// Discovering Cisco Computer Networks
+const certTOU_compNet = () => {
+  modalSrc(certImageTOU_compNet, certAltTOU_compNet);
+};
+const certTOU_compNet_Modal = "javascript:certTOU_compNet()";
+// #endregion (TOU) //
 
 //* Vectorworks (Modals)
+// #region (Vectorworks) //
 /// VW - Core Concepts Training
 const certVW_Core = () => {
   modalSrc(certImageVW_Core, certAltVW_Core);
 };
-const certVW_Core_HB = "javascript:certVW_Core()";
+const certVW_Core_Modal = "javascript:certVW_Core()";
 
 /// VW - Intermediate Concepts Training
 const certVW_Inter = () => {
   modalSrc(certImageVW_Inter, certAltVW_Inter);
 };
-const certVW_Inter_HB = "javascript:certVW_Inter()";
+const certVW_Inter_Modal = "javascript:certVW_Inter()";
 
 /// VW - BIM for Landscape Design
 const certVW_BIM = () => {
   modalSrc(certImageVW_BIM, certAltVW_BIM);
 };
-const certVW_BIM_HB = "javascript:certVW_BIM()";
+const certVW_BIM_Modal = "javascript:certVW_BIM()";
 
 /// VW - DWG File Exchange
 const certVW_DWG = () => {
   modalSrc(certImageVW_DWG, certAltVW_DWG);
 };
-const certVW_DWG_HB = "javascript:certVW_DWG()";
+const certVW_DWG_Modal = "javascript:certVW_DWG()";
+// #endregion (Vectorworks) //
 
 //#endregion (Modals)
 
@@ -153,6 +166,19 @@ const providerLogoSS = "assets/img/Skillshare-logo.svg";
 const providerAltSS = "SkillShare Logo";
 //#endregion (SS)
 
+//* The Open University (Src)
+// #region (TOU) - Generic
+const providerNameTOU = "The Open University";
+const providerLogoTOU = "assets/img/the-open-uni-logo.svg";
+const providerAltTOU = "The Open University Logo";
+// TOU - Discovering Cisco Computer Networks
+const courseLogoTOU_compNet = "/assets/img/Comp-Net-Badge_Min.svg";
+const courseAltTOU_compNet = "Discovering Cisco Computer Networks";
+const certNameTOU_compNet = "Discovering Cisco Computer Networks";
+const certImageTOU_compNet = "https://i.ibb.co/kQ504sm/Cisco-Computer-Networks.jpg";
+const certAltTOU_compNet = providerNameTOU + emDash + certNameTOU_compNet;
+//#endregion (TOU)
+
 //* Vectorworks (Src)
 // #region (VW)
 /// VW - Generic
@@ -186,6 +212,7 @@ const certAltVW_DWG = providerNameVW + emDash + certNameVW_DWG;
 //#endregion (VW)
 
 // #endregion (Src)
+
 
 
 //! Handlebars Template - HB Context
@@ -350,18 +377,18 @@ const webDevContext = {
 //* Networking Section - HB Context
 const networkingContext = {
   course: [
-    // Program - Specific
+    // The Open University - Discovering Cisco Computer Networks
     {
-      courseLink: "https://skl.sh/2UNR2ZZ",
-      courseLogoSrc: "assets/img/Adobe-InDesign.svg",
-      courseLogoAlt: courseAltAdobe,
-      certLink: certTranscriptSS,
-      programText: "Adobe InDesign",
-      specificText: "Essentials Course",
-      hrs: "6.5hrs",
-      date: "June, 2020",
-      providerLogoSrc: providerLogoSS,
-      providerLogoAlt: providerAltSS,
+      courseLink: "https://www.open.edu/openlearn/science-maths-technology/computing-ict/discovering-computer-networks-hands-on-the-open-networking-lab/content-section-overview",
+      courseLogoSrc: courseLogoTOU_compNet,
+      courseLogoAlt: courseAltTOU_compNet,
+      certLink: certTOU_compNet_Modal,
+      programText: providerNameTOU,
+      specificText: courseAltTOU_compNet,
+      hrs: "8 Weeks",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoTOU,
+      providerLogoAlt: providerAltTOU,
     },
   ],
 };
@@ -374,7 +401,7 @@ const safetyContext = {
       courseLink: "https://www.imtraininguk.com/health-and-safety-courses/",
       courseLogoSrc: courseLogoSafety,
       courseLogoAlt: courseAltSafety,
-      certLink: certNCRQ_HB,
+      certLink: certNCRQ_Modal,
       programText: providerNameNCRQ,
       specificText: certNameNCRQ_SFM,
       hrs: "12hrs + Oral Assessments",
@@ -388,7 +415,7 @@ const safetyContext = {
         "https://www.ncass.org.uk/training/health-safety-courses/haccp-training/",
       courseLogoSrc: courseLogoFSA,
       courseLogoAlt: courseAltFSA,
-      certLink: certNCASS_HACCP_HB,
+      certLink: certNCASS_HACCP_Modal,
       programText: providerNameNCASS,
       specificText: certNameNCASS_HACCP,
       hrs: "20hrs + Exam",
@@ -401,7 +428,7 @@ const safetyContext = {
       courseLink: "https://www.ncass.org.uk/training/food-hygiene/level-2/",
       courseLogoSrc: courseLogoFSA,
       courseLogoAlt: courseAltFSA,
-      certLink: certNCASS_FH2_HB,
+      certLink: certNCASS_FH2_Modal,
       programText: providerNameNCASS,
       specificText: certNameNCASS_FH2,
       hrs: "10hrs + Exam",
@@ -414,7 +441,7 @@ const safetyContext = {
       courseLink: "https://www.ncass.org.uk/training/food-hygiene/level-1/",
       courseLogoSrc: courseLogoFSA,
       courseLogoAlt: courseAltFSA,
-      certLink: certNCASS_FH1_HB,
+      certLink: certNCASS_FH1_Modal,
       programText: providerNameNCASS,
       specificText: certNameNCASS_FH1,
       hrs: "10hrs + Exam",
@@ -452,7 +479,7 @@ const engineeringContext = {
       courseLink: "https://university.vectorworks.net/course/view.php?id=234",
       courseLogoSrc: courseLogoVW,
       courseLogoAlt: courseAltVW,
-      certLink: certVW_Inter_HB,
+      certLink: certVW_Inter_Modal,
       programText: providerNameVW,
       specificText: certNameVW_Inter,
       hrs: "16hrs",
@@ -465,7 +492,7 @@ const engineeringContext = {
       courseLink: "https://university.vectorworks.net/course/view.php?id=76",
       courseLogoSrc: courseLogoVW,
       courseLogoAlt: courseAltVW,
-      certLink: certVW_Core_HB,
+      certLink: certVW_Core_Modal,
       programText: providerNameVW,
       specificText: certNameVW_Core,
       hrs: "16hrs",
@@ -517,7 +544,7 @@ const engineeringContext = {
       courseLink: "https://university.vectorworks.net/course/view.php?id=73",
       courseLogoSrc: courseLogoBIM,
       courseLogoAlt: courseAltBIM,
-      certLink: certVW_BIM_HB,
+      certLink: certVW_BIM_Modal,
       programText: providerNameVW,
       specificText: certNameVW_BIM,
       hrs: "1hr + Exam",
@@ -530,7 +557,7 @@ const engineeringContext = {
       courseLink: "https://university.vectorworks.net/course/view.php?id=181",
       courseLogoSrc: courseLogoDWG,
       courseLogoAlt: courseAltDWG,
-      certLink: certVW_DWG_HB,
+      certLink: certVW_DWG_Modal,
       programText: providerNameVW,
       specificText: certNameVW_DWG,
       hrs: "1hr + Exam",
