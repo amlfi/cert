@@ -20,7 +20,6 @@ const certTranscriptVW =
 
 //#endregion (URLs)
 
-
 //! Modals
 //#region (Modals)
 
@@ -96,7 +95,6 @@ const certVW_DWG_Modal = "javascript:certVW_DWG()";
 // #endregion (Vectorworks) //
 
 //#endregion (Modals)
-
 
 //! Images, Logos & Captions (Src)
 // #region (Src)
@@ -175,16 +173,17 @@ const providerAltTOU = "The Open University Logo";
 const courseLogoTOU_compNet = "/assets/img/Comp-Net-Badge_Min.svg";
 const courseAltTOU_compNet = "Discovering Cisco Computer Networks";
 const certNameTOU_compNet = "Discovering Cisco Computer Networks";
-const certImageTOU_compNet = "https://i.ibb.co/kQ504sm/Cisco-Computer-Networks.jpg";
+const certImageTOU_compNet =
+  "https://i.ibb.co/kQ504sm/Cisco-Computer-Networks.jpg";
 const certAltTOU_compNet = providerNameTOU + emDash + certNameTOU_compNet;
 //#endregion (TOU)
 
 //* Vectorworks (Src)
 // #region (VW)
 /// VW - Generic
-const providerNameVW = "Vectorworks"
+const providerNameVW = "Vectorworks";
 const providerLogoVW = "assets/img/VW-logo-long_on_black.svg";
-const providerAltVW = "Vectorworks University"
+const providerAltVW = "Vectorworks University";
 const courseLogoVW = "assets/img/VW-logo-monogram_on_white.svg";
 const courseAltVW = "Vectorworks Logo";
 /// VW - BIM
@@ -194,26 +193,24 @@ const courseAltBIM = "BIM Logo";
 const courseLogoDWG = "assets/img/dwg.svg";
 const courseAltDWG = "DWG Logo";
 /// VW - Core Concepts Training
-const certNameVW_Core = "Core Concepts Training"
+const certNameVW_Core = "Core Concepts Training";
 const certImageVW_Core = "assets/img/VW_Core-Concepts.jpg";
 const certAltVW_Core = providerNameVW + emDash + certNameVW_Core;
 /// VW - Intermediate Concepts Training
-const certNameVW_Inter = "Intermediate Concepts Training"
+const certNameVW_Inter = "Intermediate Concepts Training";
 const certImageVW_Inter = "assets/img/VW_Intermediate-Concepts.jpg";
 const certAltVW_Inter = providerNameVW + emDash + certNameVW_Inter;
 /// VW - BIM for Landscape Design
-const certNameVW_BIM = "BIM for Landscape Design"
+const certNameVW_BIM = "BIM for Landscape Design";
 const certImageVW_BIM = "assets/img/VW_BIM_Cert.jpg";
 const certAltVW_BIM = providerNameVW + emDash + certNameVW_BIM;
 /// VW - Intermediate Concepts Training
-const certNameVW_DWG = "DWG File Exchange"
+const certNameVW_DWG = "DWG File Exchange";
 const certImageVW_DWG = "assets/img/VW_DWG_Cert.jpg";
 const certAltVW_DWG = providerNameVW + emDash + certNameVW_DWG;
 //#endregion (VW)
 
 // #endregion (Src)
-
-
 
 //! Handlebars Template - HB Context
 //#region (HB Context)
@@ -221,6 +218,19 @@ const certAltVW_DWG = providerNameVW + emDash + certNameVW_DWG;
 //* Design Section - HB Context
 const designContext = {
   course: [
+    // Adobe Illustrator - Advanced Course
+    {
+      courseLink: "https://skl.sh/2C5GIpP",
+      courseLogoSrc: courseLogoAI,
+      courseLogoAlt: courseAltAdobe,
+      certLink: certTranscriptSS,
+      programText: "Adobe Illustrator",
+      specificText: "Advanced Training Course",
+      hrs: "8hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoSS,
+      providerLogoAlt: providerAltSS,
+    },
     // Adobe InDesign - Essentials Course
     {
       courseLink: "https://skl.sh/2UNR2ZZ",
@@ -379,7 +389,8 @@ const networkingContext = {
   course: [
     // The Open University - Discovering Cisco Computer Networks
     {
-      courseLink: "https://www.open.edu/openlearn/science-maths-technology/computing-ict/discovering-computer-networks-hands-on-the-open-networking-lab/content-section-overview",
+      courseLink:
+        "https://www.open.edu/openlearn/science-maths-technology/computing-ict/discovering-computer-networks-hands-on-the-open-networking-lab/content-section-overview",
       courseLogoSrc: courseLogoTOU_compNet,
       courseLogoAlt: courseAltTOU_compNet,
       certLink: certTOU_compNet_Modal,
