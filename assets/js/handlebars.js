@@ -170,7 +170,7 @@ const providerNameTOU = "The Open University";
 const providerLogoTOU = "assets/img/the-open-uni-logo.svg";
 const providerAltTOU = "The Open University Logo";
 // TOU - Discovering Cisco Computer Networks
-const courseLogoTOU_compNet = "/assets/img/Comp-Net-Badge_Min.svg";
+const courseLogoTOU_compNet = "assets/img/compNet.svg";
 const courseAltTOU_compNet = "Discovering Cisco Computer Networks";
 const certNameTOU_compNet = "Discovering Cisco Computer Networks";
 const certImageTOU_compNet =
