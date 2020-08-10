@@ -65,7 +65,7 @@ tr td.right {
 }
 
 #business {
-  display: none;
+  visibility: visible;
 }
 
 #engineering {

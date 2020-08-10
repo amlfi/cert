@@ -18,6 +18,10 @@ const courseTranscriptVW =
 const certTranscriptVW =
   "https://university.vectorworks.net/local/vectscript/s.php/TzFJdz";
 
+//* Xero URLs
+/// Course Description
+const courseLinkXERO = "https://www.xero.com/au/partner-programs/partners/partner-education/";
+
 //#endregion (URLs)
 
 //! Modals
@@ -94,6 +98,15 @@ const certVW_DWG = () => {
 const certVW_DWG_Modal = "javascript:certVW_DWG()";
 // #endregion (Vectorworks) //
 
+//* Xero (Modals)
+// #region (XERO) //
+/// Xero Certified Advisor
+const certXERO_advisor = () => {
+  modalSrc(certImageXERO_advisor, certAltXERO_advisor);
+};
+const certXERO_advisor_Modal = "javascript:certXERO_advisor()";
+// #endregion (XERO) //
+
 //#endregion (Modals)
 
 //! Images, Logos & Captions (Src)
@@ -169,7 +182,7 @@ const providerAltSS = "SkillShare Logo";
 const providerNameTOU = "The Open University";
 const providerLogoTOU = "assets/img/the-open-uni-logo.svg";
 const providerAltTOU = "The Open University Logo";
-// TOU - Discovering Cisco Computer Networks
+/// TOU - Discovering Cisco Computer Networks
 const courseLogoTOU_compNet = "assets/img/compNet.svg";
 const courseAltTOU_compNet = "Discovering Cisco Computer Networks";
 const certNameTOU_compNet = "Discovering Cisco Computer Networks";
@@ -209,6 +222,20 @@ const certNameVW_DWG = "DWG File Exchange";
 const certImageVW_DWG = "assets/img/VW_DWG_Cert.jpg";
 const certAltVW_DWG = providerNameVW + emDash + certNameVW_DWG;
 //#endregion (VW)
+
+//* Xero (Src)
+// #region (Xero)
+/// Xero - Generic
+const providerNameXERO = "Xero";
+const providerLogoXERO = "assets/img/xero-logo.svg";
+const providerAltXERO = "Xero Logo";
+/// XERO - Xero Advisor Certified
+const courseLogoXERO_advisor = "assets/img/xero-advisor-certified_onBlack_lgText.svg";
+const courseAltXERO_advisor = "Xero Advisor Certified";
+const certNameXERO_advisor = "Xero Advisor Certified";
+const certImageXERO_advisor = "assets/img/xero-Xero_Advisor_Certified-cert.jpg";
+const certAltXERO_advisor = providerNameXERO + emDash + certNameXERO_advisor;
+// #endregion (Xero)
 
 // #endregion (Src)
 
@@ -305,7 +332,7 @@ const webDevContext = {
     // Code Foundations - Career Path
     {
       courseLink: "https://www.codecademy.com/learn/paths/code-foundations",
-      courseLogoSrc: "assets/img/codeFoundations_onWhite.svg",
+      courseLogoSrc: "assets/img/logo_codeFoundations_color.svg",
       courseLogoAlt: providerAltCC,
       certLink: certTranscriptCC,
       programText: providerNameCC,
@@ -319,7 +346,7 @@ const webDevContext = {
     {
       courseLink:
         "https://www.codecademy.com/learn/paths/learn-how-to-build-websites",
-      courseLogoSrc: "assets/img/buildWebsite.svg",
+      courseLogoSrc: "assets/img/logo_buildWebsites_color.svg",
       courseLogoAlt: providerAltCC,
       certLink: certTranscriptCC,
       programText: providerNameCC,
@@ -466,18 +493,18 @@ const safetyContext = {
 //* Business Section - HB Context
 const businessContext = {
   course: [
-    // Program - Specific
+    // Xero - Xero Advisor Certified
     {
-      courseLink: "https://skl.sh/2UNR2ZZ",
-      courseLogoSrc: "assets/img/Adobe-InDesign.svg",
-      courseLogoAlt: courseAltAdobe,
-      certLink: certTranscriptSS,
-      programText: "Adobe InDesign",
-      specificText: "Essentials Course",
-      hrs: "6.5hrs",
-      date: "June, 2020",
-      providerLogoSrc: providerLogoSS,
-      providerLogoAlt: providerAltSS,
+      courseLink: courseLinkXERO,
+      courseLogoSrc: courseLogoXERO_advisor,
+      courseLogoAlt: courseAltXERO_advisor,
+      certLink: certXERO_advisor_Modal,
+      programText: providerNameXERO,
+      specificText: courseAltXERO_advisor,
+      hrs: "11hrs + Exam",
+      date: "August, 2020",
+      providerLogoSrc: providerLogoXERO,
+      providerLogoAlt: providerAltXERO,
     },
   ],
 };
