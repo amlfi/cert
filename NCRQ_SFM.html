@@ -249,9 +249,11 @@
     <script defer src="assets/js/fontawesome.min.js"></script>
 
     <!--* Handlebars -->
-    <!-- Handlebars Template-->
+    <!-- #region (HB) -->
+    
+    <!--/ Handlebars Template-->
     <script id="templateHBCert" type="text/x-handlebars-template">
-    {{#with certXEROAdvisor}}
+    {{#with certNCRQSafety}}
       <div
         class="col text-center flex-column align-items-center d-flex"
         id="bioCol"
@@ -300,9 +302,20 @@
       </div>
       {{/with}}
     </script>
-    <!-- Handlebars Functions -->
+
+    <!--/ Handlebars Helpers-->
+    <span id="templateHB"></span>
+    <span id="designHB"></span>
+    <span id="webDevHB"></span>
+    <span id="networkingHB"></span>
+    <span id="safetyHB"></span>
+    <span id="businessHB"></span>
+    <span id="engineeringHB"></span>
+
+    <!--/ Handlebars Functions -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script src="assets/js/handlebarsCert.min.js"></script>
+    <script src="assets/js/handlebars.min.js"></script>
+    <!-- #endregion (HB) -->
 
     <!-- #endregion (Scripts) -->
   </body>

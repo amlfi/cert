@@ -166,9 +166,12 @@ const providerAltNCRQ = "NCRQ Logo";
 // NCRQ - Safety for Managers
 const courseLogoSafety = "assets/img/generic_safety.svg";
 const courseAltSafety = "Generic Safety Logo";
+const courseAltNCRQ = "Safety for Managers";
 const certNameNCRQ_SFM = "Safety for Managers";
-const certImageNCRQ = "assets/img/img_locked.svg";
+const certImageNCRQ = "assets/img/NCRQ-Safety_for_Managers-cert.jpg";
 const certAltNCRQ = providerNameNCRQ + emDash + certNameNCRQ_SFM;
+const certLengthNCRQ = "12hrs + Oral Assessments";
+const certDateNCRQ = "June, 2020";
 //#endregion (NCRQ)
 
 //* SkillShare (Src)
@@ -235,6 +238,8 @@ const courseAltXERO_advisor = "Xero Advisor Certified";
 const certNameXERO_advisor = "Xero Advisor Certified";
 const certImageXERO_advisor = "assets/img/xero-Xero_Advisor_Certified-cert.jpg";
 const certAltXERO_advisor = providerNameXERO + emDash + certNameXERO_advisor;
+const certLengthXERO_advisor = "8 Weeks"
+const certDateXERO_advisor = "July, 2020";
 // #endregion (Xero)
 
 // #endregion (Src)
@@ -442,8 +447,8 @@ const safetyContext = {
       certLink: certNCRQ_Modal,
       programText: providerNameNCRQ,
       specificText: certNameNCRQ_SFM,
-      hrs: "12hrs + Oral Assessments",
-      date: "June, 2020",
+      hrs: certLengthNCRQ,
+      date: certDateNCRQ,
       providerLogoSrc: providerLogoNCRQ,
       providerLogoAlt: providerAltNCRQ,
     },
@@ -501,8 +506,8 @@ const businessContext = {
       certLink: certXERO_advisor_Modal,
       programText: providerNameXERO,
       specificText: courseAltXERO_advisor,
-      hrs: "11hrs + Exam",
-      date: "August, 2020",
+      hrs: certLengthXERO_advisor,
+      date: certDateXERO_advisor,
       providerLogoSrc: providerLogoXERO,
       providerLogoAlt: providerAltXERO,
     },
@@ -564,14 +569,14 @@ const engineeringContext = {
       providerLogoSrc: providerLogoVW,
       providerLogoAlt: courseAltVW,
     },
-    // Vectorworks Architecht - Essentials Seminar
+    // Vectorworks Architect - Essentials Seminar
     {
       courseLink: "https://university.vectorworks.net/course/view.php?id=236",
       courseLogoSrc: courseLogoVW,
       courseLogoAlt: courseAltVW,
       certLink: courseTranscriptVW,
       programText: providerNameVW,
-      specificText: "Architecht - Essentials Seminar",
+      specificText: "Architect - Essentials Seminar",
       hrs: "2hrs",
       date: "May, 2020",
       providerLogoSrc: providerLogoVW,
@@ -606,17 +611,39 @@ const engineeringContext = {
   ],
 };
 
+//* Cert Section - HB Context
+const certContext = {
+  // Xero - Xero Advisor Certified
+  certXEROAdvisor:
+    {
+      certImage: certImageXERO_advisor,
+      certAlt: courseAltXERO_advisor,
+      certName: certNameXERO_advisor,
+      certLength: certLengthXERO_advisor,
+      certDate: certDateXERO_advisor
+    },
+  // NCRQ - Safety for Managers
+  certNCRQSafety:
+    {
+      certImage: certImageNCRQ,
+      certAlt: courseAltNCRQ,
+      certName: certNameNCRQ_SFM,
+      certLength: certLengthNCRQ,
+      certDate: certDateNCRQ
+    },
+}
+
 //#endregion (HB Context)
 
 //! Handlebars - HB Expressions
-// #region (HB Expressions)
+// #region (Standard HB Expressions)
 
 //* Standard HB Expressions
 const templateElement = document.getElementById("templateHB");
 const templateSource = templateElement.innerHTML;
 const template = Handlebars.compile(templateSource);
 
-//* HB Expressions - By Section
+// //* HB Expressions - By Section
 // Design Section - HB Expressions
 const designCompiledHTML = template(designContext);
 document.getElementById("designHB").innerHTML = designCompiledHTML;
@@ -636,4 +663,15 @@ document.getElementById("businessHB").innerHTML = businessCompiledHTML;
 const engineeringCompiledHTML = template(engineeringContext);
 document.getElementById("engineeringHB").innerHTML = engineeringCompiledHTML;
 
-// #endregion (HB Expressions)
+// #endregion (standard HB Expressions)
+
+// #region (Cert HB Expressions)
+
+//* Cert HB Expressions
+const templateElementCert = document.getElementById("templateHBCert");
+const templateSourceCert = templateElementCert.innerHTML;
+const templateCert = Handlebars.compile(templateSourceCert);
+const certCompiledHTML = templateCert(certContext);
+document.getElementById("certHB").innerHTML = certCompiledHTML;
+
+// #endregion (standard HB Expressions)

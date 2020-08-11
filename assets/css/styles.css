@@ -295,10 +295,11 @@ tr td.certCell {
   margin: 0 4px;
   color: #fff;
   opacity: 0.75;
+  transition:color .3s ease;
 }
 
 .footer-dark .social > a:hover {
-  opacity: 0.9;
+  opacity: 1;
   color: white;
 }
 
