@@ -185,6 +185,8 @@ tr {
 .table th {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-top: 0px solid #dee2e6;
   vertical-align: middle;
 }
@@ -199,11 +201,17 @@ tr {
 }
 
 .logoCell {
-  width: 5%;
+  width: 6%;
+  overflow: hidden;
 }
 
 .logoImg {
   height: 25px;
+  overflow: hidden;
+}
+
+.logoImgRight {
+  padding-left: 1rem;
 }
 
 .providerImg {
@@ -410,8 +418,8 @@ tr td.certCell {
 }
 
 .zoomIn:hover {
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }

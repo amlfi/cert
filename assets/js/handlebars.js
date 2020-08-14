@@ -1,15 +1,78 @@
 //! URL Links
 //#region (URLs)
 
+//* ATEC URLs
+//#region (ATEC URLs)
+/// Test and Tag
+const courseLinkATEC =
+  "https://training.atec.asn.au/training-courses/electrotechnology/test-and-tag-non-accredited-305-inc-gst-pp.cfm";
+//#endregion (ATEC URLs)
+
+//* CITC URLs
+//#region (CITC URLs)
+/// Rigging - Intermediate
+const courseLinkCITC_RI =
+  "https://www.citc.com.au/index.php/courses-available/?course=6326&type=w";
+/// Mobile Non-Slewing Crane
+const courseLinkCITC_CN =
+  "https://www.citc.com.au/index.php/courses-available/?course=58600&type=w";
+/// Rigging - Basic
+const courseLinkCITC_RB =
+  "https://www.citc.com.au/index.php/courses-available/?course=4658&type=w";
+/// Telescopic Materials Handler
+const courseLinkCITC_TMH =
+  "https://www.citc.com.au/index.php/courses-available/?course=62627&type=w";
+/// Elevating Work Platforms
+const courseLinkCITC_EWP =
+  "https://www.citc.com.au/index.php/courses-available/?course=58598&type=w";
+/// Dogging
+const courseLinkCITC_DG =
+  "https://www.citc.com.au/index.php/courses-available/?course=6324&type=w";
+/// Working at Heights
+const courseLinkCITC_WH =
+  "https://www.citc.com.au/index.php/courses-available/?course=5941&type=w";
+/// Forklift
+const courseLinkCITC_FL =
+  "https://www.citc.com.au/index.php/courses-available/?course=58595&type=w";
+/// White Card
+const courseLinkCITC_WC =
+  "https://www.citc.com.au/index.php/courses-available/?course=34624&type=w";
+//#endregion (CITC URLs)
+
 //* Codecademy URLs
+//#region (Codecademy URLs)
 /// Course Transcript
 const certTranscriptCC = "https://www.codecademy.com/profiles/AMLFI";
+//#endregion (Codecademy URLs)
+
+//* HIA URLs
+//#region (HIA URLs)
+/// Food Safety Supervisor Lv.1
+const courseLinkHIA_FSS1 =
+  "http://hia.edu.au/hospitality-and-retail/food-safety-supervisor/";
+/// Food Safety Supervisor Lv.2
+const courseLinkHIA_FSS2 =
+  "http://hia.edu.au/hospitality-and-retail/food-safety-supervisor/";
+/// Responsible Service of Alcohol
+const courseLinkHIA_RSA =
+  "http://www.hia.edu.au/responsible-service-of-alcohol/queensland/";
+//#endregion (HIA URLs)
 
 //* SkillShare URLs
+//#region (SkillShare URLs)
 /// Course Transcript
 const certTranscriptSS = "https://www.skillshare.com/user/amlfitzgerald";
+//#endregion (SkillShare URLs)
+
+//* StJohn URLs
+//#region (StJohn URLs)
+/// Occupational First Aid
+const courseLinkStJohn =
+  "https://one.stjohnsa.com.au/classBookings.aspx?webcat=COMM2&couid=OFA14";
+//#endregion (StJohn URLs)
 
 //* Vectorworks URLs
+//#region (Vectorworks URLs)
 /// Course Transcript
 const courseTranscriptVW =
   "https://university.vectorworks.net/local/vectscript/s.php/26oCCO";
@@ -17,10 +80,14 @@ const courseTranscriptVW =
 /// Certificate Transcript
 const certTranscriptVW =
   "https://university.vectorworks.net/local/vectscript/s.php/TzFJdz";
+//#endregion (Vectorworks URLs)
 
 //* Xero URLs
+//#region (Xero URLs)
 /// Course Description
-const courseLinkXERO = "https://www.xero.com/au/partner-programs/partners/partner-education/";
+const courseLinkXERO =
+  "https://www.xero.com/au/partner-programs/partners/partner-education/";
+//#endregion (Xero URLs)
 
 //#endregion (URLs)
 
@@ -33,6 +100,93 @@ const modalSrc = (certImage, captionText) => {
   $("#imagemodal").modal("show");
   document.getElementById("modal-caption").innerHTML = captionText; // Caption Text
 };
+
+//* ATEC (Modals)
+// #region (ATEC) //
+/// ATEC - Test and Tag
+const certATEC = () => {
+  modalSrc(certImageATEC, certAltATEC);
+};
+const certATEC_Modal = "javascript:certATEC()";
+// #endregion (ATEC) //
+
+//* CITC (Modals)
+// #region (CITC) //
+
+/// CITC - Rigging (Intermediate)
+const certCITC_RI = () => {
+  modalSrc(certImageCITC_RI, certAltCITC_RI);
+};
+const certCITC_RI_Modal = "javascript:certCITC_RI()";
+
+/// CITC - Mobile Non-Slewing Crane
+const certCITC_CN = () => {
+  modalSrc(certImageCITC_CN, certAltCITC_CN);
+};
+const certCITC_CN_Modal = "javascript:certCITC_CN()";
+
+/// CITC - Rigging (Basic)
+const certCITC_RB = () => {
+  modalSrc(certImageCITC_RB, certAltCITC_RB);
+};
+const certCITC_RB_Modal = "javascript:certCITC_RB()";
+
+/// CITC - Telescopic Materials Handler
+const certCITC_TMH = () => {
+  modalSrc(certImageCITC_TMH, certAltCITC_TMH);
+};
+const certCITC_TMH_Modal = "javascript:certCITC_TMH()";
+
+/// CITC - Elevating Work Platforms
+const certCITC_EWP = () => {
+  modalSrc(certImageCITC_EWP, certAltCITC_EWP);
+};
+const certCITC_EWP_Modal = "javascript:certCITC_EWP()";
+
+/// CITC - Dogging
+const certCITC_DG = () => {
+  modalSrc(certImageCITC_DG, certAltCITC_DG);
+};
+const certCITC_DG_Modal = "javascript:certCITC_DG()";
+
+/// CITC - Working at Heights
+const certCITC_WH = () => {
+  modalSrc(certImageCITC_WH, certAltCITC_WH);
+};
+const certCITC_WH_Modal = "javascript:certCITC_WH()";
+
+/// CITC - Forklift
+const certCITC_FL = () => {
+  modalSrc(certImageCITC_FL, certAltCITC_FL);
+};
+const certCITC_FL_Modal = "javascript:certCITC_FL()";
+
+/// CITC - White Card
+const certCITC_WC = () => {
+  modalSrc(certImageCITC_WC, certAltCITC_WC);
+};
+const certCITC_WC_Modal = "javascript:certCITC_WC()";
+
+// #endregion (CITC) //
+
+//* HIA (Modals)
+// #region (HIA) //
+/// HIA - Food Safety Supervisor Lv. 1
+const certHIA_FSS1 = () => {
+  modalSrc(certImageHIA_FSS1, certAltHIA_FSS1);
+};
+const certHIA_FSS1_Modal = "javascript:certHIA_FSS1()";
+/// HIA - Food Safety Supervisor Lv. 2
+const certHIA_FSS2 = () => {
+  modalSrc(certImageHIA_FSS2, certAltHIA_FSS2);
+};
+const certHIA_FSS2_Modal = "javascript:certHIA_FSS2()";
+/// HIA - Responsible Service of Alcohol
+const certHIA_RSA = () => {
+  modalSrc(certImageHIA_RSA, certAltHIA_RSA);
+};
+const certHIA_RSA_Modal = "javascript:certHIA_RSA()";
+// #endregion (HIA) //
 
 //* NCASS (Modals)
 // #region (NCASS)
@@ -61,6 +215,24 @@ const certNCRQ = () => {
 };
 const certNCRQ_Modal = "javascript:certNCRQ()";
 // #endregion (NCRQ) //
+
+//* StJohn (Modals)
+// #region (StJohn) //
+/// StJohn - Occupational First Aid
+const certStJohn = () => {
+  modalSrc(certImageStJohn, certAltStJohn);
+};
+const certStJohn_Modal = "javascript:certStJohn()";
+// #endregion (StJohn) //
+
+//* TafeSA (Modals)
+// #region (TafeSA) //
+/// TafeSA Certificate II Electrotechnology
+const certTafeSA = () => {
+  modalSrc(certImageTafeSA, certAltTafeSA);
+};
+const certTafeSA_Modal = "javascript:certTafeSA()";
+// #endregion (TafeSA) //
 
 //* The Open University (Modals)
 // #region (TOU) //
@@ -128,6 +300,104 @@ const courseLogoXD = "assets/img/Adobe-XD.svg";
 const courseAltAdobe = "Adobe Logo";
 //#endregion (Adobe)
 
+//* ATEC (Src)
+// #region (ATEC)
+/// ATEC - Generic
+const providerNameATEC = "Adelaide Training & Employment Centre";
+const providerNameShortATEC = "ATEC";
+const providerLogoATEC = "assets/img/ATEC-logo.svg";
+const providerAltATEC = "ATEC Logo";
+/// ATEC - Rigging (Intermediate)
+const courseLogoATEC = "assets/img/ATEC-logo_meter.svg";
+const courseAltATEC = "Test & Tag";
+const certNameATEC = "License to Conduct Electrical Equipment Testing";
+const certImageATEC = "assets/img/ATEC-cert.jpg";
+const certAltATEC = providerNameATEC + emDash + certNameATEC;
+const certLengthATEC = "8hrs";
+const certDateATEC = "Nov, 2015";
+// #endregion (ATEC)
+
+//* CITC (Src)
+// #region (CITC)
+/// CITC - Generic
+const providerNameCITC = "Construction Industry Training Centre";
+const providerNameShortCITC = "CITC";
+const providerLogoCITC = "assets/img/CITC-logo.svg";
+const providerAltCITC = "CITC Logo";
+/// CITC - Rigging (Intermediate)
+const courseLogoCITC_RI = "assets/img/CITC-icon_RI.svg";
+const courseAltCITC_RI = "Rigging - Intermediate";
+const certNameCITC_RI = "Licence to Perform Rigging - Intermediate";
+const certImageCITC_RI = "assets/img/CITC-RI-cert.jpg";
+const certAltCITC_RI = providerNameCITC + emDash + certNameCITC_RI;
+const certLengthCITC_RI = "40hrs";
+const certDateCITC_RI = "Feb, 2019";
+/// CITC - CN Crane
+const courseLogoCITC_CN = "assets/img/CITC-icon_CN.svg";
+const courseAltCITC_CN = "CN Crane";
+const certNameCITC_CN = "Licence to Operate Non-Slewing Mobile Crane";
+const certImageCITC_CN = "assets/img/CITC-CN-cert.jpg";
+const certAltCITC_CN = providerNameCITC + emDash + certNameCITC_CN;
+const certLengthCITC_CN = "32hrs";
+const certDateCITC_CN = "Feb, 2019";
+/// CITC - Rigging (Basic)
+const courseLogoCITC_RB = "assets/img/CITC-icon_RB.svg";
+const courseAltCITC_RB = "Rigging - Basic";
+const certNameCITC_RB = "Licence to Perform Rigging - Basic";
+const certImageCITC_RB = "assets/img/CITC-RB-cert.jpg";
+const certAltCITC_RB = providerNameCITC + emDash + certNameCITC_RB;
+const certLengthCITC_RB = "40hrs";
+const certDateCITC_RB = "Dec, 2015";
+/// CITC - Telescopic Materials Handler
+const courseLogoCITC_TMH = "assets/img/CITC-icon_TMH.svg";
+const courseAltCITC_TMH = "Telehandler";
+const certNameCITC_TMH = "Licence to Operate Telescopic Materials Handler";
+const certImageCITC_TMH = "assets/img/CITC-TMH-cert.jpg";
+const certAltCITC_TMH = providerNameCITC + emDash + certNameCITC_TMH;
+const certLengthCITC_TMH = "10hrs";
+const certDateCITC_TMH = "Dec, 2012";
+/// CITC - Elevating Work Platforms
+const courseLogoCITC_EWP = "assets/img/CITC-icon_EWP.svg";
+const courseAltCITC_EWP = "Rigging - Intermediate";
+const certNameCITC_EWP = "Licence to Operate 11m+ Elevating Work Platform";
+const certImageCITC_EWP = "assets/img/CITC-EWP-cert.jpg";
+const certAltCITC_EWP = providerNameCITC + emDash + certNameCITC_EWP;
+const certLengthCITC_EWP = "16hrs";
+const certDateCITC_EWP = "Dec, 2012";
+/// CITC - Dogging
+const courseLogoCITC_DG = "assets/img/CITC-icon_DG.svg";
+const courseAltCITC_DG = "Dogging";
+const certNameCITC_DG = "Licence to Perform Dogging";
+const certImageCITC_DG = "assets/img/CITC-DG-cert.jpg";
+const certAltCITC_DG = providerNameCITC + emDash + certNameCITC_DG;
+const certLengthCITC_DG = "40hrs";
+const certDateCITC_DG = "Dec, 2012";
+/// CITC - Working at Heights
+const courseLogoCITC_WH = "assets/img/CITC-icon_WH.svg";
+const courseAltCITC_WH = "Working at Heights";
+const certNameCITC_WH = "Work Safely at Heights";
+const certImageCITC_WH = "assets/img/CITC-WH-cert.jpg";
+const certAltCITC_WH = providerNameCITC + emDash + certNameCITC_WH;
+const certLengthCITC_WH = "8hrs";
+const certDateCITC_WH = "Dec, 2012";
+/// CITC - Forklift
+const courseLogoCITC_FL = "assets/img/CITC-icon_FL.svg";
+const courseAltCITC_FL = "Forklift";
+const certNameCITC_FL = "Licence to Operate Forklift";
+const certImageCITC_FL = "assets/img/img_locked.svg";
+const certAltCITC_FL = providerNameCITC + emDash + certNameCITC_FL;
+const certLengthCITC_FL = "16hrs";
+const certDateCITC_FL = "Nov, 2011";
+/// CITC - White Card
+const courseLogoCITC_WC = "assets/img/CITC-icon_WC.svg";
+const courseAltCITC_WC = "White Card";
+const certNameCITC_WC = "Construction Industry Safety Induction";
+const certImageCITC_WC = "assets/img/img_locked.svg";
+const certAltCITC_WC = providerNameCITC + emDash + certNameCITC_WC;
+const certLengthCITC_WC = "8hrs";
+const certDateCITC_WC = "Feb, 2011";
+// #endregion (CITC)
+
 //* Codecademy (Src)
 // #region (CC)
 /// Codecademy - Generic
@@ -135,6 +405,38 @@ const providerNameCC = "Codecademy";
 const providerLogoCC = "assets/img/codecademy_onBlack.svg";
 const providerAltCC = "Codecademy Logo";
 // #endregion (CC)
+
+//* HIA (Src)
+// #region (HIA)
+/// CITC - Generic
+const providerNameHIA = "Hospitality Institute of Australasia";
+const providerLogoHIA = "assets/img/HIA-logo.png";
+const providerAltHIA = "HIA Logo";
+/// HIA - Food Safety Supervisor Lv. 1
+const courseLogoHIA_FSS1 = "assets/img/HIA-FSS1-logo.png";
+const courseAltHIA_FSS1 = "FSS1 logo";
+const certNameHIA_FSS1 = "Food Safety Supervisor Lv. 1";
+const certImageHIA_FSS1 = "assets/img/HIA-FSS1-cert.jpg";
+const certAltHIA_FSS1 = providerNameHIA + emDash + certNameHIA_FSS1;
+const certLengthHIA_FSS1 = "8hrs";
+const certDateHIA_FSS1 = "Jan, 2015";
+/// HIA - Food Safety Supervisor Lv. 2
+const courseLogoHIA_FSS2 = "assets/img/HIA-FSS2-logo.png";
+const courseAltHIA_FSS2 = "FSS2 logo";
+const certNameHIA_FSS2 = "Food Safety Supervisor Lv. 2";
+const certImageHIA_FSS2 = "assets/img/HIA-FSS2-cert.jpg";
+const certAltHIA_FSS2 = providerNameHIA + emDash + certNameHIA_FSS2;
+const certLengthHIA_FSS2 = "8hrs";
+const certDateHIA_FSS2 = "Jan, 2015";
+/// HIA - Responsible Service of Alcohol
+const courseLogoHIA_RSA = "assets/img/HIA-RSA-logo.svg";
+const courseAltHIA_RSA = "RSA logo";
+const certNameHIA_RSA = "Responsible Service of Alcohol";
+const certImageHIA_RSA = "assets/img/HIA-RSA-cert.jpg";
+const certAltHIA_RSA = providerNameHIA + emDash + certNameHIA_RSA;
+const certLengthHIA_RSA = "4hrs";
+const certDateHIA_RSA = "Feb, 2016";
+// #endregion (HIA)
 
 //* NCASS (Src)
 // #region (NCASS)
@@ -179,6 +481,38 @@ const certDateNCRQ = "June, 2020";
 const providerLogoSS = "assets/img/Skillshare-logo.svg";
 const providerAltSS = "SkillShare Logo";
 //#endregion (SS)
+
+//* StJohn (Src)
+// #region (StJohn)
+/// StJohn - Generic
+const providerNameStJohn = "St. John Ambulance";
+const providerLogoStJohn = "assets/img/StJohn-horiz-logo.png";
+const providerAltStJohn = "StJohn Logo";
+/// StJohn - Occupational First Aid
+const courseLogoStJohn = "assets/img/StJohn-logo_firstAid.svg";
+const courseAltStJohn = "Occupational First Aid";
+const certNameStJohn = "Occupational First Aid";
+const certImageStJohn = "assets/img/StJohn-cert.jpg";
+const certAltStJohn = providerNameStJohn + emDash + certNameStJohn;
+const certLengthStJohn = "30hrs";
+const certDateStJohn = "Dec, 2013";
+// #endregion (StJohn)
+
+//* TafeSA (Src)
+// #region (TafeSA)
+/// TafeSA - Generic
+const providerNameTafeSA = "TAFE South Australia";
+const providerLogoTafeSA = "assets/img/TafeSA_whiteOnRed.svg";
+const providerAltTafeSA = "TafeSA Logo";
+/// XERO - Xero Advisor Certified
+const courseLogoTafeSA = "assets/img/TafeSA-electricLogo.svg";
+const courseAltTafeSA = "Certificate II Electrotechnology";
+const certNameTafeSA = "Certificate II Electrotechnology";
+const certImageTafeSA = "assets/img/TafeSA-Electrotechnology-Cert.jpg";
+const certAltTafeSA = providerNameTafeSA + emDash + certNameTafeSA;
+const certLengthTafeSA = "3 months";
+const certDateTafeSA = "July, 2013";
+// #endregion (TafeSA)
 
 //* The Open University (Src)
 // #region (TOU) - Generic
@@ -233,13 +567,14 @@ const providerNameXERO = "Xero";
 const providerLogoXERO = "assets/img/xero-logo.svg";
 const providerAltXERO = "Xero Logo";
 /// XERO - Xero Advisor Certified
-const courseLogoXERO_advisor = "assets/img/xero-advisor-certified_onBlack_lgText.svg";
+const courseLogoXERO_advisor =
+  "assets/img/xero-advisor-certified_onBlack_lgText.svg";
 const courseAltXERO_advisor = "Xero Advisor Certified";
 const certNameXERO_advisor = "Xero Advisor Certified";
 const certImageXERO_advisor = "assets/img/xero-Xero_Advisor_Certified-cert.jpg";
 const certAltXERO_advisor = providerNameXERO + emDash + certNameXERO_advisor;
-const certLengthXERO_advisor = "8 Weeks"
-const certDateXERO_advisor = "July, 2020";
+const certLengthXERO_advisor = "8 weeks";
+const certDateXERO_advisor = "Aug, 2020";
 // #endregion (Xero)
 
 // #endregion (Src)
@@ -334,6 +669,164 @@ const designContext = {
 //* Web Dev Section - HB Context
 const webDevContext = {
   course: [
+    // Web Development - Career Path
+    {
+      courseLink: "https://www.codecademy.com/learn/paths/web-development",
+      courseLogoSrc: "assets/img/logo_webDev_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: providerNameCC,
+      specificText: "Career Path - Web Development",
+      hrs: "6 Months",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // JavaScript Back-End Apps - Skill Path
+    {
+      courseLink:
+        "https://www.codecademy.com/learn/paths/create-a-back-end-app-with-javascript",
+      courseLogoSrc: "assets/img/logo_js_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "JavaScript",
+      specificText: "Create Back-End Apps",
+      hrs: "8 weeks",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // React Front-End Apps - Skill Path
+    {
+      courseLink:
+        "https://www.codecademy.com/learn/paths/build-web-apps-with-react",
+      courseLogoSrc: "assets/img/logo_react_blue.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "React",
+      specificText: "Create Front-End Apps",
+      hrs: "8 weeks",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // Learn CSS - Course
+    {
+      courseLink: "https://www.codecademy.com/learn/learn-css",
+      courseLogoSrc: "assets/img/logo_css_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "CSS",
+      specificText: "Learn CSS3 Design",
+      hrs: "15hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // Learn Command Line - Course
+    {
+      courseLink: "https://www.codecademy.com/learn/learn-the-command-line",
+      courseLogoSrc: "assets/img/logo_commandLine_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "BASH",
+      specificText: "Learn the Command Line",
+      hrs: "10hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // Learn Git - Course
+    {
+      courseLink: "https://www.codecademy.com/learn/learn-git",
+      courseLogoSrc: "assets/img/logo_git_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "Git",
+      specificText: "Learn Git Fundamentals",
+      hrs: "7hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // Learn SQL - Course
+    {
+      courseLink: "https://www.codecademy.com/learn/deploy-a-website",
+      courseLogoSrc: "assets/img/logo_sql_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "SQL",
+      specificText: "Build and Query SQL Databases",
+      hrs: "7hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // Learn Express - Course
+    {
+      courseLink: "https://www.codecademy.com/learn/learn-express",
+      courseLogoSrc: "assets/img/logo_express_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "Express",
+      specificText: "Build CRUD API's",
+      hrs: "4hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // Learn Responsive Design - Course
+    {
+      courseLink: "https://www.codecademy.com/learn/learn-responsive-design",
+      courseLogoSrc: "assets/img/logo_responsiveDesign_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "CSS3",
+      specificText: "Learn Responsive Design",
+      hrs: "2hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // Deploy Jekyll Websites - Course
+    {
+      courseLink: "https://www.codecademy.com/learn/deploy-a-website",
+      courseLogoSrc: "assets/img/logo_deployingJekyll_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "Jekyll",
+      specificText: "Deploying Static Sites",
+      hrs: "2hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // Learn Node-SQLite - Course
+    {
+      courseLink: "https://www.codecademy.com/learn/learn-node-sqlite",
+      courseLogoSrc: "assets/img/logo_nodeSQLite_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "Node-SQLite",
+      specificText: "Connecting JS Apps with SQL Databases",
+      hrs: "1hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
+    // Learn Node.js - Course
+    {
+      courseLink: "https://www.codecademy.com/learn/learn-node-js",
+      courseLogoSrc: "assets/img/logo_nodeJS_color.svg",
+      courseLogoAlt: providerAltCC,
+      certLink: certTranscriptCC,
+      programText: "Node.js",
+      specificText: "Server-Side Development",
+      hrs: "1hrs",
+      date: "July, 2020",
+      providerLogoSrc: providerLogoCC,
+      providerLogoAlt: providerAltCC,
+    },
     // Code Foundations - Career Path
     {
       courseLink: "https://www.codecademy.com/learn/paths/code-foundations",
@@ -342,21 +835,21 @@ const webDevContext = {
       certLink: certTranscriptCC,
       programText: providerNameCC,
       specificText: "Career Path - Code Foundations",
-      hrs: "2 Weeks",
+      hrs: "2 weeks",
       date: "June, 2020",
       providerLogoSrc: providerLogoCC,
       providerLogoAlt: providerAltCC,
     },
-    // Build a Website - Skill Path
+    // Build a Website with GitHub - Skill Path
     {
       courseLink:
         "https://www.codecademy.com/learn/paths/learn-how-to-build-websites",
-      courseLogoSrc: "assets/img/logo_buildWebsites_color.svg",
+      courseLogoSrc: "assets/img/logo_GitHub_onBlack.svg",
       courseLogoAlt: providerAltCC,
       certLink: certTranscriptCC,
-      programText: providerNameCC,
-      specificText: "Skill Path - HTML5 Websites with Github",
-      hrs: "10 Weeks",
+      programText: "GitHub",
+      specificText: "Create HTML5 Websites",
+      hrs: "10 weeks",
       date: "June, 2020",
       providerLogoSrc: providerLogoCC,
       providerLogoAlt: providerAltCC,
@@ -374,27 +867,15 @@ const webDevContext = {
       providerLogoSrc: providerLogoSS,
       providerLogoAlt: providerAltSS,
     },
-    // Learn How To Code - Course
-    {
-      courseLink: "https://www.codecademy.com/learn/learn-how-to-code",
-      courseLogoSrc: "assets/img/code_onWhite.svg",
-      courseLogoAlt: providerAltCC,
-      certLink: certTranscriptCC,
-      programText: providerNameCC,
-      specificText: "Course - Learn How To Code",
-      hrs: "6hrs",
-      date: "June, 2020",
-      providerLogoSrc: providerLogoCC,
-      providerLogoAlt: providerAltCC,
-    },
+
     // Learn Bootstrap - Course
     {
       courseLink: "https://www.codecademy.com/learn/learn-bootstrap",
       courseLogoSrc: "assets/img/bootstrap_icon.svg",
       courseLogoAlt: "Bootstrap Logo",
       certLink: certTranscriptCC,
-      programText: providerNameCC,
-      specificText: "Course - Learn Bootstrap",
+      programText: "Bootstrap",
+      specificText: "Learn Bootstrap 4",
       hrs: "3hrs",
       date: "June, 2020",
       providerLogoSrc: providerLogoCC,
@@ -406,8 +887,8 @@ const webDevContext = {
       courseLogoSrc: "assets/img/html-5-notext.svg",
       courseLogoAlt: "HTML Logo",
       certLink: certTranscriptCC,
-      programText: providerNameCC,
-      specificText: "Course - Learn HTML",
+      programText: "HTML",
+      specificText: "Learn HTML5",
       hrs: "9hrs",
       date: "May, 2020",
       providerLogoSrc: providerLogoCC,
@@ -428,7 +909,7 @@ const networkingContext = {
       certLink: certTOU_compNet_Modal,
       programText: providerNameTOU,
       specificText: courseAltTOU_compNet,
-      hrs: "8 Weeks",
+      hrs: "8 weeks",
       date: "July, 2020",
       providerLogoSrc: providerLogoTOU,
       providerLogoAlt: providerAltTOU,
@@ -461,7 +942,7 @@ const safetyContext = {
       certLink: certNCASS_HACCP_Modal,
       programText: providerNameNCASS,
       specificText: certNameNCASS_HACCP,
-      hrs: "20hrs + Exam",
+      hrs: "20hrs + exam",
       date: "June, 2020",
       providerLogoSrc: providerLogoNCASS,
       providerLogoAlt: providerAltNCASS,
@@ -474,7 +955,7 @@ const safetyContext = {
       certLink: certNCASS_FH2_Modal,
       programText: providerNameNCASS,
       specificText: certNameNCASS_FH2,
-      hrs: "10hrs + Exam",
+      hrs: "10hrs + exam",
       date: "June, 2020",
       providerLogoSrc: providerLogoNCASS,
       providerLogoAlt: providerAltNCASS,
@@ -487,10 +968,62 @@ const safetyContext = {
       certLink: certNCASS_FH1_Modal,
       programText: providerNameNCASS,
       specificText: certNameNCASS_FH1,
-      hrs: "10hrs + Exam",
+      hrs: "10hrs + exam",
       date: "June, 2019",
       providerLogoSrc: providerLogoNCASS,
       providerLogoAlt: providerAltNCASS,
+    },
+    // HIA - Responsible Service of Alcohol //
+    {
+      courseLink: courseLinkHIA_RSA,
+      courseLogoSrc: courseLogoHIA_RSA,
+      courseLogoAlt: courseAltHIA_RSA,
+      certLink: certHIA_RSA_Modal,
+      programText: providerNameHIA,
+      specificText: certNameHIA_RSA,
+      hrs: certLengthHIA_RSA,
+      date: certDateHIA_RSA,
+      providerLogoSrc: providerLogoHIA,
+      providerLogoAlt: providerAltHIA,
+    },
+    // HIA - Food Safety Supervisor Lv. 1 //
+    {
+      courseLink: courseLinkHIA_FSS1,
+      courseLogoSrc: courseLogoHIA_FSS1,
+      courseLogoAlt: courseAltHIA_FSS1,
+      certLink: certHIA_FSS1_Modal,
+      programText: providerNameHIA,
+      specificText: certNameHIA_FSS1,
+      hrs: certLengthHIA_FSS1,
+      date: certDateHIA_FSS1,
+      providerLogoSrc: providerLogoHIA,
+      providerLogoAlt: providerAltHIA,
+    },
+    // HIA - Food Safety Supervisor Lv. 2 //
+    {
+      courseLink: courseLinkHIA_FSS2,
+      courseLogoSrc: courseLogoHIA_FSS2,
+      courseLogoAlt: courseAltHIA_FSS2,
+      certLink: certHIA_FSS2_Modal,
+      programText: providerNameHIA,
+      specificText: certNameHIA_FSS2,
+      hrs: certLengthHIA_FSS2,
+      date: certDateHIA_FSS2,
+      providerLogoSrc: providerLogoHIA,
+      providerLogoAlt: providerAltHIA,
+    },
+    // StJohn - Occupational First Aid
+    {
+      courseLink: courseLinkStJohn,
+      courseLogoSrc: courseLogoStJohn,
+      courseLogoAlt: courseAltStJohn,
+      certLink: certStJohn_Modal,
+      programText: providerNameStJohn,
+      specificText: certNameStJohn,
+      hrs: certLengthStJohn,
+      date: certDateStJohn,
+      providerLogoSrc: providerLogoStJohn,
+      providerLogoAlt: providerAltStJohn,
     },
   ],
 };
@@ -590,7 +1123,7 @@ const engineeringContext = {
       certLink: certVW_BIM_Modal,
       programText: providerNameVW,
       specificText: certNameVW_BIM,
-      hrs: "1hr + Exam",
+      hrs: "1hr + exam",
       date: "May, 2020",
       providerLogoSrc: providerLogoVW,
       providerLogoAlt: courseAltVW,
@@ -603,10 +1136,159 @@ const engineeringContext = {
       certLink: certVW_DWG_Modal,
       programText: providerNameVW,
       specificText: certNameVW_DWG,
-      hrs: "1hr + Exam",
+      hrs: "1hr + exam",
       date: "May, 2020",
       providerLogoSrc: providerLogoVW,
       providerLogoAlt: courseAltVW,
+    },
+    // TafeSA - Certificate II Electrotechnology
+    {
+      courseLink: "http://www.tafesa.edu.au/xml/course/aw/aw_TP00420.aspx",
+      courseLogoSrc: courseLogoTafeSA,
+      courseLogoAlt: courseAltTafeSA,
+      certLink: certTafeSA_Modal,
+      programText: providerNameTafeSA,
+      specificText: certNameTafeSA,
+      hrs: certLengthTafeSA,
+      date: certDateTafeSA,
+      providerLogoSrc: providerLogoTafeSA,
+      providerLogoAlt: courseAltTafeSA,
+    },
+  ],
+};
+
+//* Licenses Section - HB Context
+const licensesContext = {
+  course: [
+    // CITC - Rigging (Intermediate)
+    {
+      courseLink: courseLinkCITC_RI,
+      courseLogoSrc: courseLogoCITC_RI,
+      courseLogoAlt: courseAltCITC_RI,
+      certLink: certCITC_RI_Modal,
+      programText: providerNameShortCITC,
+      specificText: certNameCITC_RI,
+      hrs: certLengthCITC_RI,
+      date: certDateCITC_RI,
+      providerLogoSrc: providerLogoCITC,
+      providerLogoAlt: providerAltCITC,
+    },
+    // CITC - CN Crane
+    {
+      courseLink: courseLinkCITC_CN,
+      courseLogoSrc: courseLogoCITC_CN,
+      courseLogoAlt: courseAltCITC_CN,
+      certLink: certCITC_CN_Modal,
+      programText: providerNameShortCITC,
+      specificText: certNameCITC_CN,
+      hrs: certLengthCITC_CN,
+      date: certDateCITC_CN,
+      providerLogoSrc: providerLogoCITC,
+      providerLogoAlt: providerAltCITC,
+    },
+    // CITC - Rigging (Basic)
+    {
+      courseLink: courseLinkCITC_RB,
+      courseLogoSrc: courseLogoCITC_RB,
+      courseLogoAlt: courseAltCITC_RB,
+      certLink: certCITC_RB_Modal,
+      programText: providerNameShortCITC,
+      specificText: certNameCITC_RB,
+      hrs: certLengthCITC_RB,
+      date: certDateCITC_RB,
+      providerLogoSrc: providerLogoCITC,
+      providerLogoAlt: providerAltCITC,
+    },
+    // ATEC - Test & Tag
+    {
+      courseLink: courseLinkATEC,
+      courseLogoSrc: courseLogoATEC,
+      courseLogoAlt: courseAltATEC,
+      certLink: certATEC_Modal,
+      programText: providerNameShortATEC,
+      specificText: certNameATEC,
+      hrs: certLengthATEC,
+      date: certDateATEC,
+      providerLogoSrc: providerLogoATEC,
+      providerLogoAlt: providerAltATEC,
+    },
+    // CITC - Telescopic Materials Handler
+    {
+      courseLink: courseLinkCITC_TMH,
+      courseLogoSrc: courseLogoCITC_TMH,
+      courseLogoAlt: courseAltCITC_TMH,
+      certLink: certCITC_TMH_Modal,
+      programText: providerNameShortCITC,
+      specificText: certNameCITC_TMH,
+      hrs: certLengthCITC_TMH,
+      date: certDateCITC_TMH,
+      providerLogoSrc: providerLogoCITC,
+      providerLogoAlt: providerAltCITC,
+    },
+    // CITC - Elevating Work Platforms
+    {
+      courseLink: courseLinkCITC_EWP,
+      courseLogoSrc: courseLogoCITC_EWP,
+      courseLogoAlt: courseAltCITC_EWP,
+      certLink: certCITC_EWP_Modal,
+      programText: providerNameShortCITC,
+      specificText: certNameCITC_EWP,
+      hrs: certLengthCITC_EWP,
+      date: certDateCITC_EWP,
+      providerLogoSrc: providerLogoCITC,
+      providerLogoAlt: providerAltCITC,
+    },
+    // CITC - Dogging
+    {
+      courseLink: courseLinkCITC_DG,
+      courseLogoSrc: courseLogoCITC_DG,
+      courseLogoAlt: courseAltCITC_DG,
+      certLink: certCITC_DG_Modal,
+      programText: providerNameShortCITC,
+      specificText: certNameCITC_DG,
+      hrs: certLengthCITC_DG,
+      date: certDateCITC_DG,
+      providerLogoSrc: providerLogoCITC,
+      providerLogoAlt: providerAltCITC,
+    },
+    // CITC - Working at Heights
+    {
+      courseLink: courseLinkCITC_WH,
+      courseLogoSrc: courseLogoCITC_WH,
+      courseLogoAlt: courseAltCITC_WH,
+      certLink: certCITC_WH_Modal,
+      programText: providerNameShortCITC,
+      specificText: certNameCITC_WH,
+      hrs: certLengthCITC_WH,
+      date: certDateCITC_WH,
+      providerLogoSrc: providerLogoCITC,
+      providerLogoAlt: providerAltCITC,
+    },
+    // CITC - Forklift
+    {
+      courseLink: courseLinkCITC_FL,
+      courseLogoSrc: courseLogoCITC_FL,
+      courseLogoAlt: courseAltCITC_FL,
+      certLink: certCITC_FL_Modal,
+      programText: providerNameShortCITC,
+      specificText: certNameCITC_FL,
+      hrs: certLengthCITC_FL,
+      date: certDateCITC_FL,
+      providerLogoSrc: providerLogoCITC,
+      providerLogoAlt: providerAltCITC,
+    },
+    // CITC - White Card
+    {
+      courseLink: courseLinkCITC_WC,
+      courseLogoSrc: courseLogoCITC_WC,
+      courseLogoAlt: courseAltCITC_WC,
+      certLink: certCITC_WC_Modal,
+      programText: providerNameShortCITC,
+      specificText: certNameCITC_WC,
+      hrs: certLengthCITC_WC,
+      date: certDateCITC_WC,
+      providerLogoSrc: providerLogoCITC,
+      providerLogoAlt: providerAltCITC,
     },
   ],
 };
@@ -614,24 +1296,22 @@ const engineeringContext = {
 //* Cert Section - HB Context
 const certContext = {
   // Xero - Xero Advisor Certified
-  certXEROAdvisor:
-    {
-      certImage: certImageXERO_advisor,
-      certAlt: courseAltXERO_advisor,
-      certName: certNameXERO_advisor,
-      certLength: certLengthXERO_advisor,
-      certDate: certDateXERO_advisor
-    },
+  certXEROAdvisor: {
+    certImage: certImageXERO_advisor,
+    certAlt: courseAltXERO_advisor,
+    certName: certNameXERO_advisor,
+    certLength: certLengthXERO_advisor,
+    certDate: certDateXERO_advisor,
+  },
   // NCRQ - Safety for Managers
-  certNCRQSafety:
-    {
-      certImage: certImageNCRQ,
-      certAlt: courseAltNCRQ,
-      certName: certNameNCRQ_SFM,
-      certLength: certLengthNCRQ,
-      certDate: certDateNCRQ
-    },
-}
+  certNCRQSafety: {
+    certImage: certImageNCRQ,
+    certAlt: courseAltNCRQ,
+    certName: certNameNCRQ_SFM,
+    certLength: certLengthNCRQ,
+    certDate: certDateNCRQ,
+  },
+};
 
 //#endregion (HB Context)
 
@@ -662,11 +1342,13 @@ document.getElementById("businessHB").innerHTML = businessCompiledHTML;
 // Engineering Section - HB Expressions
 const engineeringCompiledHTML = template(engineeringContext);
 document.getElementById("engineeringHB").innerHTML = engineeringCompiledHTML;
+// Licenses Section - HB Expressions
+const licensesCompiledHTML = template(licensesContext);
+document.getElementById("licensesHB").innerHTML = licensesCompiledHTML;
 
 // #endregion (standard HB Expressions)
 
 // #region (Cert HB Expressions)
-
 //* Cert HB Expressions
 const templateElementCert = document.getElementById("templateHBCert");
 const templateSourceCert = templateElementCert.innerHTML;

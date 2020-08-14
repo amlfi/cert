@@ -331,6 +331,31 @@
       </div>
     </div>
 
+    <!--/ Licenses Section  -->
+    <div class="container" data-aos="fade-up" id="licenses">
+      <div class="row">
+        <div class="col" style="padding: 0 0;">
+          <div class="row" style="margin: 0;">
+            <div class="col awardCat">
+              <img
+                class="catImg shadow"
+                src="https://i.ibb.co/km0JDL5/header-licenses.png"
+                alt="header image - licenses"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody id="licensesHB">
+                <!-- Templates inserted via handlebars.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--/ Footer Section -->
     <div class="container">
       <div
@@ -462,7 +487,7 @@
     <script defer src="assets/js/fontawesome.min.js"></script>
 
     <!--* Handlebars -->
-    <!-- Handlebars Template-->
+    <!--/ Handlebars Template-->
     <script id="templateHB" type="text/x-handlebars-template">
       {{#each course}}
         <tr>
@@ -515,7 +540,7 @@
               rel="noreferrer"
             >
               <img
-                class="logoImg zoomIn"
+                class="logoImg logoImgRight zoomIn"
                 src={{this.providerLogoSrc}}
                 alt={{this.providerLogoAlt}}
                 loading="lazy"
@@ -525,7 +550,12 @@
         </tr>
       {{/each}}
     </script>
-    <!-- Handlebars Functions -->
+
+    <!--/ Handlebars Helpers-->
+    <span id="templateHBCert"></span>
+    <span id="certHB"></span>
+
+    <!--/ Handlebars Functions -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="assets/js/handlebars.min.js"></script>
 
