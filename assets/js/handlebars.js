@@ -410,7 +410,7 @@ const providerAltCC = "Codecademy Logo";
 // #region (HIA)
 /// CITC - Generic
 const providerNameHIA = "Hospitality Institute of Australasia";
-const providerLogoHIA = "assets/img/HIA-logo.png";
+const providerLogoHIA = "assets/img/HIA-logo_short.svg";
 const providerAltHIA = "HIA Logo";
 /// HIA - Food Safety Supervisor Lv. 1
 const courseLogoHIA_FSS1 = "assets/img/HIA-FSS1-logo.png";
