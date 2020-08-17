@@ -272,11 +272,17 @@ const certVW_DWG_Modal = "javascript:certVW_DWG()";
 
 //* Xero (Modals)
 // #region (XERO) //
-/// Xero Certified Advisor
+/// Xero Advisor Certified 
 const certXERO_advisor = () => {
   modalSrc(certImageXERO_advisor, certAltXERO_advisor);
 };
 const certXERO_advisor_Modal = "javascript:certXERO_advisor()";
+
+/// Xero Payroll Certified 
+const certXERO_payroll = () => {
+  modalSrc(certImageXERO_payroll, certAltXERO_payroll);
+};
+const certXERO_payroll_Modal = "javascript:certXERO_payroll()";
 // #endregion (XERO) //
 
 //#endregion (Modals)
@@ -566,6 +572,7 @@ const certAltVW_DWG = providerNameVW + emDash + certNameVW_DWG;
 const providerNameXERO = "Xero";
 const providerLogoXERO = "assets/img/xero-logo.svg";
 const providerAltXERO = "Xero Logo";
+
 /// XERO - Xero Advisor Certified
 const courseLogoXERO_advisor =
   "assets/img/xero-advisor-certified_onBlack_lgText.svg";
@@ -573,8 +580,18 @@ const courseAltXERO_advisor = "Xero Advisor Certified";
 const certNameXERO_advisor = "Xero Advisor Certified";
 const certImageXERO_advisor = "assets/img/xero-Xero_Advisor_Certified-cert.jpg";
 const certAltXERO_advisor = providerNameXERO + emDash + certNameXERO_advisor;
-const certLengthXERO_advisor = "8 weeks";
+const certLengthXERO_advisor = "17hrs";
 const certDateXERO_advisor = "Aug, 2020";
+
+/// XERO - Xero Payroll Certified
+const courseLogoXERO_payroll =
+  "assets/img/xero-payroll-certified_long_onBlack.svg";
+const courseAltXERO_payroll = "Xero Payroll Certified";
+const certNameXERO_payroll = "Xero Payroll Certified";
+const certImageXERO_payroll = "assets/img/xero-Xero_Payroll_Certified-cert.jpg";
+const certAltXERO_payroll = providerNameXERO + emDash + certNameXERO_payroll;
+const certLengthXERO_payroll = "11hrs";
+const certDateXERO_payroll = "Aug, 2020";
 // #endregion (Xero)
 
 // #endregion (Src)
@@ -1041,6 +1058,19 @@ const businessContext = {
       specificText: courseAltXERO_advisor,
       hrs: certLengthXERO_advisor,
       date: certDateXERO_advisor,
+      providerLogoSrc: providerLogoXERO,
+      providerLogoAlt: providerAltXERO,
+    },
+    // Xero - Xero Payroll Certified
+    {
+      courseLink: courseLinkXERO,
+      courseLogoSrc: courseLogoXERO_payroll,
+      courseLogoAlt: courseAltXERO_payroll,
+      certLink: certXERO_payroll_Modal,
+      programText: providerNameXERO,
+      specificText: courseAltXERO_payroll,
+      hrs: certLengthXERO_payroll,
+      date: certDateXERO_payroll,
       providerLogoSrc: providerLogoXERO,
       providerLogoAlt: providerAltXERO,
     },
