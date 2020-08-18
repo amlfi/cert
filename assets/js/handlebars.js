@@ -71,6 +71,13 @@ const courseLinkStJohn =
   "https://one.stjohnsa.com.au/classBookings.aspx?webcat=COMM2&couid=OFA14";
 //#endregion (StJohn URLs)
 
+//* University of Adelaide URLs
+//#region (UoA URLs)
+/// Course Description
+const courseLinkUoA_PM101 =
+  "https://www.edx.org/course/introduction-to-project-management";
+//#endregion (UoA URLs)
+
 //* Vectorworks URLs
 //#region (Vectorworks URLs)
 /// Course Transcript
@@ -242,6 +249,15 @@ const certTOU_compNet = () => {
 };
 const certTOU_compNet_Modal = "javascript:certTOU_compNet()";
 // #endregion (TOU) //
+
+//* The University of Adelaide (Modals)
+// #region (UoA) //
+/// Project Management
+const certUoA_PM101 = () => {
+  modalSrc(certImageUoA_PM101, certAltUoA_PM101);
+};
+const certUoA_PM101_Modal = "javascript:certUoA_PM101()";
+// #endregion (UoA) //
 
 //* Vectorworks (Modals)
 // #region (Vectorworks) //
@@ -525,6 +541,7 @@ const certDateTafeSA = "July, 2013";
 const providerNameTOU = "The Open University";
 const providerLogoTOU = "assets/img/the-open-uni-logo.svg";
 const providerAltTOU = "The Open University Logo";
+
 /// TOU - Discovering Cisco Computer Networks
 const courseLogoTOU_compNet = "assets/img/compNet.svg";
 const courseAltTOU_compNet = "Discovering Cisco Computer Networks";
@@ -533,6 +550,23 @@ const certImageTOU_compNet =
   "https://i.ibb.co/kQ504sm/Cisco-Computer-Networks.jpg";
 const certAltTOU_compNet = providerNameTOU + emDash + certNameTOU_compNet;
 //#endregion (TOU)
+
+//* The University of Adelaide (Src)
+// #region (UoA) - Generic
+const providerNameUoA = "The University of Adelaide";
+const providerLogoUoA = "assets/img/UoA_onBlack_logo.svg";
+const providerAltUoA = "UoA Logo";
+
+/// UoA - Project Management
+const courseLogoUoA_PM101 = "assets/img/edX-cert-verified.png";
+const courseAltUoA_PM101 = "Project Management";
+const certNameUoA_PM101 = "Project Management";
+const certImageUoA_PM101 =
+  "assets/img/UoA-PM101-certz.png";
+const certAltUoA_PM101 = providerNameUoA + emDash + certNameUoA_PM101;
+const certLengthUoA_PM101 = "6 weeks";
+const certDateUoA_PM101 = "Aug, 2020";
+//#endregion (UoA)
 
 //* Vectorworks (Src)
 // #region (VW)
@@ -1048,6 +1082,19 @@ const safetyContext = {
 //* Business Section - HB Context
 const businessContext = {
   course: [
+    // UoA - Project Management
+    {
+      courseLink: courseLinkUoA_PM101,
+      courseLogoSrc: courseLogoUoA_PM101,
+      courseLogoAlt: courseAltUoA_PM101,
+      certLink: certUoA_PM101_Modal,
+      programText: providerNameUoA,
+      specificText: courseAltUoA_PM101,
+      hrs: certLengthUoA_PM101,
+      date: certDateUoA_PM101,
+      providerLogoSrc: providerLogoUoA,
+      providerLogoAlt: providerAltUoA,
+    },
     // Xero - Xero Advisor Certified
     {
       courseLink: courseLinkXERO,

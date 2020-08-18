@@ -22,7 +22,7 @@ $(document).ready(
 /// Tooltip Initiation
 $(function () {
   $('[data-toggle="tooltip"]').tooltip({
-    delay: {show: 500, hide: 100}, 
+    delay: {show: 300, hide: 100}, 
     animation: true, 
     placement: "top", 
   });
