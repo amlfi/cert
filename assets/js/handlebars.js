@@ -8,6 +8,13 @@ const courseLinkATEC =
   "https://training.atec.asn.au/training-courses/electrotechnology/test-and-tag-non-accredited-305-inc-gst-pp.cfm";
 //#endregion (ATEC URLs)
 
+//* AUSGOV URLs
+//#region (AUSGOV URLs)
+/// AUSGOV - COVID-19 Infection Control
+const courseLinkAUSGOV_COV19 =
+  "https://www.health.gov.au/resources/apps-and-tools/covid-19-infection-control-training";
+//#endregion (AUSGOV URLs)
+
 //* CITC URLs
 //#region (CITC URLs)
 /// Rigging - Intermediate
@@ -89,6 +96,21 @@ const certTranscriptVW =
   "https://university.vectorworks.net/local/vectscript/s.php/TzFJdz";
 //#endregion (Vectorworks URLs)
 
+//* WHO URLs
+//#region (WHO URLs)
+/// COVID-19 Mass Gathering PH
+const courseLinkWHO_COV19_PH =
+  "https://extranet.who.int/hslp/training/enrol/index.php?id=135";
+
+/// COVID-19 OHS
+const courseLinkWHO_COV19_OHS =
+  "https://openwho.org/courses/COVID-19-occupational-health-and-safety";
+
+/// COVID-19 Mass Gathering RA
+const courseLinkWHO_COV19_RA =
+  "https://openwho.org/courses/WHO-COVID-19-mass-gatherings-risk-assessment-training";
+//#endregion (WHO URLs)
+
 //* Xero URLs
 //#region (Xero URLs)
 /// Course Description
@@ -116,6 +138,15 @@ const certATEC = () => {
 };
 const certATEC_Modal = "javascript:certATEC()";
 // #endregion (ATEC) //
+
+//* AUSGOV (Modals)
+// #region (AUSGOV) //
+/// AUSGOV - COVID-19 Infection Control
+const certAUSGOV_COV19 = () => {
+  modalSrc(certImageAUSGOV_COV19, certAltAUSGOV_COV19);
+};
+const certAUSGOV_COV19_Modal = "javascript:certAUSGOV_COV19()";
+// #endregion (AUSGOV) //
 
 //* CITC (Modals)
 // #region (CITC) //
@@ -286,15 +317,36 @@ const certVW_DWG = () => {
 const certVW_DWG_Modal = "javascript:certVW_DWG()";
 // #endregion (Vectorworks) //
 
+//* WHO (Modals)
+// #region (WHO) //
+/// WHO - COVID-19 Mass Gathering PH
+const certWHO_COV19_PH = () => {
+  modalSrc(certImageWHO_COV19_PH, certAltWHO_COV19_PH);
+};
+const certWHO_COV19_PH_Modal = "javascript:certWHO_COV19_PH()";
+
+/// WHO - COVID-19 OHS
+const certWHO_COV19_OHS = () => {
+  modalSrc(certImageWHO_COV19_OHS, certAltWHO_COV19_OHS);
+};
+const certWHO_COV19_OHS_Modal = "javascript:certWHO_COV19_OHS()";
+
+/// WHO - COVID-19 RA
+const certWHO_COV19_RA = () => {
+  modalSrc(certImageWHO_COV19_RA, certAltWHO_COV19_RA);
+};
+const certWHO_COV19_RA_Modal = "javascript:certWHO_COV19_RA()";
+// #endregion (WHO) //
+
 //* Xero (Modals)
 // #region (XERO) //
-/// Xero Advisor Certified 
+/// Xero Advisor Certified
 const certXERO_advisor = () => {
   modalSrc(certImageXERO_advisor, certAltXERO_advisor);
 };
 const certXERO_advisor_Modal = "javascript:certXERO_advisor()";
 
-/// Xero Payroll Certified 
+/// Xero Payroll Certified
 const certXERO_payroll = () => {
   modalSrc(certImageXERO_payroll, certAltXERO_payroll);
 };
@@ -338,6 +390,23 @@ const certAltATEC = providerNameATEC + emDash + certNameATEC;
 const certLengthATEC = "8hrs";
 const certDateATEC = "Nov, 2015";
 // #endregion (ATEC)
+
+//* AUS GOV (Src)
+// #region (AUSGOV)
+/// AUSGOV - Generic
+const providerNameAUSGOV = "AUS GOV";
+const providerLogoAUSGOV = "assets/img/AUSGOV_logo.svg";
+const providerAltAUSGOV = "AUSGOV Logo";
+
+/// AUSGOV - COVID-19 Infection Control
+const courseLogoAUSGOV_COV19 = "assets/img/COVID-19_Logo_4.svg";
+const courseAltAUSGOV_COV19 = "COVID-19 Infection Control";
+const certNameAUSGOV_COV19 = "COVID-19 Infection Control";
+const certImageAUSGOV_COV19 = "assets/img/AUSGOV_COV19.jpg";
+const certAltAUSGOV_COV19 = providerNameAUSGOV + emDash + certNameAUSGOV_COV19;
+const certLengthAUSGOV_COV19 = "2hrs";
+const certDateAUSGOV_COV19 = "Oct, 2020";
+// #endregion (AUSGOV)
 
 //* CITC (Src)
 // #region (CITC)
@@ -561,8 +630,7 @@ const providerAltUoA = "UoA Logo";
 const courseLogoUoA_PM101 = "assets/img/edX-cert-verified.png";
 const courseAltUoA_PM101 = "Project Management";
 const certNameUoA_PM101 = "Project Management";
-const certImageUoA_PM101 =
-  "assets/img/UoA-PM101-certz.png";
+const certImageUoA_PM101 = "assets/img/UoA-PM101-certz.png";
 const certAltUoA_PM101 = providerNameUoA + emDash + certNameUoA_PM101;
 const certLengthUoA_PM101 = "6 weeks";
 const certDateUoA_PM101 = "Aug, 2020";
@@ -599,6 +667,41 @@ const certNameVW_DWG = "DWG File Exchange";
 const certImageVW_DWG = "assets/img/VW_DWG_Cert.jpg";
 const certAltVW_DWG = providerNameVW + emDash + certNameVW_DWG;
 //#endregion (VW)
+
+//* WHO (Src)
+// #region (WHO)
+/// WHO - Generic
+const providerNameWHO = "WHO";
+const providerLogoWHO = "assets/img/WHO_logo.svg";
+const providerAltWHO = "WHO Logo";
+
+/// WHO - COVID-19 Mass Gathering PH
+const courseLogoWHO_COV19_PH = "assets/img/COVID-19_Logo_7.svg";
+const courseAltWHO_COV19_PH = "COVID-19 Mass Gathering Public Health";
+const certNameWHO_COV19_PH = "COVID-19 Mass Gathering Public Health";
+const certImageWHO_COV19_PH = "assets/img/WHO_COV19_PH.jpg";
+const certAltWHO_COV19_PH = providerNameWHO + emDash + certNameWHO_COV19_PH;
+const certLengthWHO_COV19_PH = "6hrs";
+const certDateWHO_COV19_PH = "Oct, 2020";
+
+/// WHO - COVID-19 OHS
+const courseLogoWHO_COV19_OHS = "assets/img/COVID-19_Logo_2.svg";
+const courseAltWHO_COV19_OHS = "COVID-19 Occupational Health & Safety";
+const certNameWHO_COV19_OHS = "COVID-19 Occupational Health & Safety";
+const certImageWHO_COV19_OHS = "assets/img/WHO_COV19_OHS.jpg";
+const certAltWHO_COV19_OHS = providerNameWHO + emDash + certNameWHO_COV19_OHS;
+const certLengthWHO_COV19_OHS = "1hr";
+const certDateWHO_COV19_OHS = "Oct, 2020";
+
+/// WHO - COVID-19 Mass Gathering RA
+const courseLogoWHO_COV19_RA = "assets/img/COVID-19_Logo_6.svg";
+const courseAltWHO_COV19_RA = "COVID-19 Mass Gathering Risk Assessments";
+const certNameWHO_COV19_RA = "COVID-19 Mass Gathering Risk Assessments";
+const certImageWHO_COV19_RA = "assets/img/WHO_COV19_RA.jpg";
+const certAltWHO_COV19_RA = providerNameWHO + emDash + certNameWHO_COV19_RA;
+const certLengthWHO_COV19_RA = "1hr";
+const certDateWHO_COV19_RA = "Oct, 2020";
+// #endregion (WHO)
 
 //* Xero (Src)
 // #region (Xero)
@@ -971,6 +1074,58 @@ const networkingContext = {
 //* Safety Section - HB Context
 const safetyContext = {
   course: [
+    // WHO - COVID-19 Mass Gathering PH
+    {
+      courseLink: courseLinkWHO_COV19_PH,
+      courseLogoSrc: courseLogoWHO_COV19_PH,
+      courseLogoAlt: courseAltWHO_COV19_PH,
+      certLink: certWHO_COV19_PH_Modal,
+      programText: providerNameWHO,
+      specificText: courseAltWHO_COV19_PH,
+      hrs: certLengthWHO_COV19_PH,
+      date: certDateWHO_COV19_PH,
+      providerLogoSrc: providerLogoWHO,
+      providerLogoAlt: providerAltWHO,
+    },
+    // WHO - COVID-19 OHS
+    {
+      courseLink: courseLinkWHO_COV19_OHS,
+      courseLogoSrc: courseLogoWHO_COV19_OHS,
+      courseLogoAlt: courseAltWHO_COV19_OHS,
+      certLink: certWHO_COV19_OHS_Modal,
+      programText: providerNameWHO,
+      specificText: courseAltWHO_COV19_OHS,
+      hrs: certLengthWHO_COV19_OHS,
+      date: certDateWHO_COV19_OHS,
+      providerLogoSrc: providerLogoWHO,
+      providerLogoAlt: providerAltWHO,
+    },
+    // WHO - COVID-19 Mass Gathering RA
+    {
+      courseLink: courseLinkWHO_COV19_RA,
+      courseLogoSrc: courseLogoWHO_COV19_RA,
+      courseLogoAlt: courseAltWHO_COV19_RA,
+      certLink: certWHO_COV19_RA_Modal,
+      programText: providerNameWHO,
+      specificText: courseAltWHO_COV19_RA,
+      hrs: certLengthWHO_COV19_RA,
+      date: certDateWHO_COV19_RA,
+      providerLogoSrc: providerLogoWHO,
+      providerLogoAlt: providerAltWHO,
+    },
+    // AUS GOV - COVID-19 Infection Control
+    {
+      courseLink: courseLinkAUSGOV_COV19,
+      courseLogoSrc: courseLogoAUSGOV_COV19,
+      courseLogoAlt: courseAltAUSGOV_COV19,
+      certLink: certAUSGOV_COV19_Modal,
+      programText: providerNameAUSGOV,
+      specificText: courseAltAUSGOV_COV19,
+      hrs: certLengthAUSGOV_COV19,
+      date: certDateAUSGOV_COV19,
+      providerLogoSrc: providerLogoAUSGOV,
+      providerLogoAlt: providerAltAUSGOV,
+    },
     // NCRQ - Safety for Managers //
     {
       courseLink: "https://www.imtraininguk.com/health-and-safety-courses/",
@@ -1372,13 +1527,13 @@ const licensesContext = {
 
 //* Cert Section - HB Context
 const certContext = {
-  // Xero - Xero Advisor Certified
-  certXEROAdvisor: {
-    certImage: certImageXERO_advisor,
-    certAlt: courseAltXERO_advisor,
-    certName: certNameXERO_advisor,
-    certLength: certLengthXERO_advisor,
-    certDate: certDateXERO_advisor,
+  // AUSGOV - COVID-19 Infection Control
+  certAUSGOV_COV19: {
+    certImage: certImageAUSGOV_COV19,
+    certAlt: courseAltAUSGOV_COV19,
+    certName: certNameAUSGOV_COV19,
+    certLength: certLengthAUSGOV_COV19,
+    certDate: certDateAUSGOV_COV19,
   },
   // NCRQ - Safety for Managers
   certNCRQSafety: {
@@ -1388,8 +1543,23 @@ const certContext = {
     certLength: certLengthNCRQ,
     certDate: certDateNCRQ,
   },
+  // WHO - COVID-19 Mass Gathering PH
+  certWHO_COV19_PH: {
+    certImage: certImageWHO_COV19_PH,
+    certAlt: courseAltWHO_COV19_PH,
+    certName: certNameWHO_COV19_PH,
+    certLength: certLengthWHO_COV19_PH,
+    certDate: certDateWHO_COV19_PH,
+  },
+  // Xero - Xero Advisor Certified
+  certXEROAdvisor: {
+    certImage: certImageXERO_advisor,
+    certAlt: courseAltXERO_advisor,
+    certName: certNameXERO_advisor,
+    certLength: certLengthXERO_advisor,
+    certDate: certDateXERO_advisor,
+  },
 };
-
 //#endregion (HB Context)
 
 //! Handlebars - HB Expressions
